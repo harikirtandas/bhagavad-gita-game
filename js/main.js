@@ -13,7 +13,8 @@ function renderChapters(chapters) {
   chapters.forEach((chapter) => {
     const li = document.createElement("li");
 
-    li.className = "bg-white p-4 rounded shadow";
+    li.className =
+      "bg-white p-4 rounded shadow cursor-pointer hover:bg-gray-50 transition";
 
     li.innerHTML = `
       <h2 class="text-lg font-medium">
@@ -23,6 +24,10 @@ function renderChapters(chapters) {
         ${chapter.summary}
       </p>
     `;
+
+    li.addEventListener("click", () => {
+      window.location.href = `game.html?chapter=${chapter.id}`;
+    });
 
     list.appendChild(li);
   });
