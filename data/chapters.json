@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "slug": "chapter-1",
+    "title": "Arjuna Viṣāda Yoga",
+    "summary": "En el campo de batalla de Kurukṣetra, Arjuna se ve abrumado por la compasión, el apego y la confusión, y se rehúsa a luchar.",
+    "challenges": [
+      {
+        "id": 1,
+        "type": "concept",
+        "question": "¿Cuál es la causa principal del desaliento de Arjuna?",
+        "options": [
+          "El miedo a perder la batalla",
+          "La compasión y el apego hacia sus familiares",
+          "La falta de fe en Kṛṣṇa",
+          "El deseo de abandonar el reino"
+        ],
+        "correct": 1,
+        "feedback": "Arjuna se deja dominar por la compasión material y el apego familiar."
+      },
+      {
+        "id": 2,
+        "type": "concept",
+        "question": "¿Dónde se encuentran los ejércitos al comienzo de la Bhagavad-gītā?",
+        "options": [
+          "En Hastināpura",
+          "En Dvārakā",
+          "En el campo de batalla de Kurukṣetra",
+          "En el bosque"
+        ],
+        "correct": 2,
+        "feedback": "La Bhagavad-gītā comienza en el campo de batalla de Kurukṣetra."
+      },
+      {
+        "id": 3,
+        "type": "concept",
+        "question": "¿Qué hace Arjuna antes de comenzar la batalla?",
+        "options": [
+          "Ataca primero",
+          "Medita en silencio",
+          "Pide a Kṛṣṇa que coloque el carro entre los ejércitos",
+          "Abandona el campo de batalla"
+        ],
+        "correct": 2,
+        "feedback": "Arjuna pide ver a quiénes deberá enfrentar en la batalla."
+      }
+    ]
+  }
+]
