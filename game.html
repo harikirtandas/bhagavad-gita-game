@@ -5,15 +5,37 @@
     <title>Juego | Bhagavad-gītā</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-gray-100 min-h-screen p-6">
-    <h1 id="chapter-title" class="text-2xl font-semibold mb-4">
-      Cargando capítulo...
-    </h1>
+    <div class="max-w-xl mx-auto bg-white p-6 rounded-xl shadow">
+      <!-- Capítulo -->
+      <h1 id="chapter-title" class="text-2xl font-semibold mb-2">
+        Cargando capítulo...
+      </h1>
 
-    <p id="chapter-summary" class="text-gray-700 mb-6"></p>
+      <p id="chapter-summary" class="text-gray-600 mb-6"></p>
 
-    <div id="game-container">
-      <!-- Acá va el juego -->
+      <!-- Progreso -->
+      <div class="mb-6">
+        <div class="w-full bg-gray-200 rounded-full h-2">
+          <div
+            id="progress-bar"
+            class="bg-green-500 h-2 rounded-full"
+            style="width: 0%"
+          ></div>
+        </div>
+        <p id="progress-text" class="text-sm text-gray-500 mt-1">
+          Progreso: 0%
+        </p>
+      </div>
+
+      <!-- Juego -->
+      <div id="game-container" class="space-y-4">
+        <!-- Pregunta y opciones se renderizan acá -->
+      </div>
+
+      <!-- Feedback -->
+      <div id="feedback" class="mt-4 font-semibold text-center"></div>
     </div>
 
     <script src="js/game.js"></script>
