@@ -5,13 +5,20 @@
     <title>Capítulos | Bhagavad-gītā Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 min-h-screen p-6">
-    <h1 class="text-2xl font-semibold mb-6">Capítulos de la Bhagavad-gītā</h1>
+  <!-- navbar -->
+  <nav
+    class="bg-gray-800 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
+  >
+    <h1 class="text-lg font-semibold">Capítulos de la Bhagavad-gītā</h1>
 
+    <div class="text-sm">Score: <span id="global-score">0%</span></div>
+  </nav>
+
+  <body class="bg-gray-100 min-h-screen p-6">
     <ul id="chapters-list" class="space-y-4">
       <!-- Los capítulos se cargan acá -->
     </ul>
 
-    <script src="js/main.js"></script>
+    <script type="module" src="js/chapters.js"></script>
   </body>
 </html>

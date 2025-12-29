@@ -1,3 +1,5 @@
+import { getGlobalScore } from "./storage.js";
+
 fetch("data/chapters.json")
   .then((response) => response.json())
   .then((chapters) => {
@@ -32,3 +34,8 @@ function renderChapters(chapters) {
     list.appendChild(li);
   });
 }
+
+const score = getGlobalScore();
+
+const scoreElement = document.querySelector("#global-score");
+scoreElement.textContent = `${score}%`;

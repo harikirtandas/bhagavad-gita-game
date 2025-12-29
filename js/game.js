@@ -1,7 +1,7 @@
 // LÓGICA de JUEGO
-
 // Storage - En la vista se aclara type="module"
 import { getProgress, saveAnswer } from "./storage.js";
+import { getGlobalScore } from "./storage.js";
 
 function getStartingQuestionIndex(chapterId) {
   const progress = getProgress();
@@ -43,8 +43,6 @@ fetch("data/chapters.json") // pido (hace una peticion http) un recurso. asíncr
     currentQuestionIndex = getStartingQuestionIndex(chapter.id, chapter);
     currentQuestionIndex = getStartingQuestionIndex(chapter.id, chapter);
 
-    console.log("Progreso leído:", getProgress());
-    console.log("Índice inicial:", currentQuestionIndex);
     renderChapter(chapter); // empieza la UI
   })
   .catch((error) => {
@@ -72,7 +70,6 @@ function renderChapter(chapter) {
 }
 
 // Preguntas
-
 function renderQuestion(question) {
   const container = document.getElementById("game-container");
 
@@ -134,6 +131,7 @@ function handleAnswer(selectedIndex, correctIndex, questionId) {
   const isCorrect = Number(selectedIndex) === Number(correctIndex);
   saveAnswer(currentChapter.id, questionId, isCorrect);
   showFeedback(isCorrect, correctIndex);
+  updateGlobalScore();
   showContinueButton(); // botón de continuar
 }
 
@@ -207,3 +205,14 @@ function updateProgress() {
     "progress-text"
   ).textContent = `Progress: ${percent}%`;
 }
+
+// Score
+function updateGlobalScore() {
+  const scoreEl = document.getElementById("global-score");
+  if (!scoreEl) return;
+
+  const score = getGlobalScore();
+  scoreEl.textContent = `${score}%`;
+}
+
+updateGlobalScore();
