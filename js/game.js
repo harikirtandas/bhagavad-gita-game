@@ -34,11 +34,13 @@ function renderChapter(chapter) {
 
   renderQuestion(chapter.challenges[currentQuestionIndex], chapter.id);
   // render de la pregunta actual, currentQuestionIndex al principio es 0
+
+  updateProgress(); // guarda el progreso
 }
 
 // Preguntas
 
-function renderQuestion(question, chapterId) {
+function renderQuestion(question) {
   const container = document.getElementById("game-container");
 
   // borra lo anterior e inserta nuevo HTML: Cada pregunta reemplaza la anterior
@@ -57,7 +59,6 @@ function renderQuestion(question, chapterId) {
             onclick="handleAnswer(
                 '${index}',
                 '${question.correct}',
-                '${chapterId}',
                 '${question.id}'
               )"
             >
@@ -72,7 +73,7 @@ function renderQuestion(question, chapterId) {
 }
 
 // respuesta del usuario con colores de feedback. Se ejcuta al hacer click en renderQuestion
-function handleAnswer(selectedIndex, correctIndex, chapterId, questionId) {
+function handleAnswer(selectedIndex, correctIndex, questionId) {
   const buttons = document.querySelectorAll("#game-container button");
 
   buttons.forEach((btn, index) => {
@@ -89,8 +90,9 @@ function handleAnswer(selectedIndex, correctIndex, chapterId, questionId) {
   });
 
   const isCorrect = selectedIndex === correctIndex;
+  saveAnswer(currentChapter.id, questionId, isCorrect);
   showFeedback(isCorrect, correctIndex);
-  showContinueButton();
+  showContinueButton(); // botón de continuar
 }
 
 // feedback textual
@@ -109,7 +111,18 @@ function showFeedback(isCorrect, correctIndex) {
   }
 }
 
-function saveAnswer() {}
+// guardar respuesta
+function saveAnswer(chapterId, questionId, isCorrect) {
+  const progress = JSON.parse(localStorage.getItem("bg-progress")) || {};
+
+  if (!progress[chapterId]) {
+    progress[chapterId] = { answers: {} };
+  }
+
+  progress[chapterId].answers[questionId] = isCorrect;
+
+  localStorage.setItem("bg-progress", JSON.stringify(progress));
+}
 
 // bloqueo de los botones
 
@@ -124,9 +137,13 @@ function disableAnswers() {
 
 // Botón de continuar
 function showContinueButton() {
+  // evitar duplicados
+  if (document.getElementById("continue-btn")) return;
+
   const container = document.getElementById("game-container");
 
   const btn = document.createElement("button");
+  btn.id = "continue-btn";
   btn.textContent = "Continuar";
   btn.className =
     "mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition";
@@ -139,11 +156,27 @@ function showContinueButton() {
 function nextQuestion() {
   currentQuestionIndex++;
 
+  updateProgress(); // guarda el progreso
+
+  document.getElementById("continue-btn")?.remove(); // limpia el boton
+  document.getElementById("feedback").textContent = ""; // lmpia el feedback
+
   if (currentQuestionIndex < currentChapter.challenges.length) {
     renderQuestion(currentChapter.challenges[currentQuestionIndex]);
-    document.getElementById("feedback").textContent = "";
   } else {
     document.getElementById("game-container").innerHTML =
       "<p class='text-center font-semibold'>Capítulo completado 🙏</p>";
   }
+}
+
+// barra de progreso
+
+function updateProgress() {
+  const total = currentChapter.challenges.length;
+  const percent = Math.round((currentQuestionIndex / total) * 100);
+
+  document.getElementById("progress-bar").style.width = `${percent}%`;
+  document.getElementById(
+    "progress-text"
+  ).textContent = `Progress: ${percent}%`;
 }
