@@ -24,6 +24,11 @@ if (!chapterId) {
   alert("No se seleccionó ningún capítulo.");
 }
 
+// Volver a capítuos
+document.getElementById("back-to-chapters")?.addEventListener("click", () => {
+  window.location.href = "chapters.html";
+});
+
 // 	fetch → datos  - find → lógica - renderChapter → UI
 // 🔹 fetch: Trae datos (asíncrono)
 // 🔹 find: Selecciona UN dato de muchos
