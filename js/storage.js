@@ -1,9 +1,11 @@
-const STORAGE_KEY = "userProgress"; // memoria persistente en el navegador
+// MEMORIA de la APP
+const STORAGE_KEY = "bg-progress"; // memoria persistente en el navegador
 
 export function getProgress() {
   return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
 }
 
+// guardar respuestas
 export function saveAnswer(chapterId, questionId, isCorrect) {
   const progress = getProgress();
 
@@ -17,7 +19,6 @@ export function saveAnswer(chapterId, questionId, isCorrect) {
 }
 
 // progreso como % porcentage
-
 function calculateProgress(chapterId) {
   const progress = getProgress();
   const answers = progress[chapterId];

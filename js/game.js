@@ -1,3 +1,20 @@
+// LÓGICA de JUEGO
+
+// Storage - En la vista se aclara type="module"
+import { getProgress, saveAnswer } from "./storage.js";
+
+function getStartingQuestionIndex(chapterId) {
+  const progress = getProgress();
+  const chapterProgress = progress[chapterId];
+
+  if (!chapterProgress) {
+    return 0; // nunca jugó este capítulo
+  }
+
+  const answeredCount = Object.keys(chapterProgress).length;
+  return answeredCount;
+}
+
 let currentQuestionIndex = 0; // en qué pregunta está
 let currentChapter = null; // guarda el capitulo actual
 const params = new URLSearchParams(window.location.search); // lee los parametros de la url ?chapter=1
@@ -18,6 +35,11 @@ fetch("data/chapters.json") // pido (hace una peticion http) un recurso. asíncr
     // chapters: array de capítulos
     const chapter = chapters.find((c) => c.id == chapterId); // “Dame el capítulo cuyo id sea igual al que vino por la URL”.
     currentChapter = chapter; // Guardás el capítulo globalmente.
+    currentQuestionIndex = getStartingQuestionIndex(chapter.id, chapter);
+    currentQuestionIndex = getStartingQuestionIndex(chapter.id, chapter);
+
+    console.log("Progreso leído:", getProgress());
+    console.log("Índice inicial:", currentQuestionIndex);
     renderChapter(chapter); // empieza la UI
   })
   .catch((error) => {
@@ -32,9 +54,15 @@ function renderChapter(chapter) {
 
   document.getElementById("chapter-summary").textContent = chapter.summary; // inserta la descripción
 
+  if (currentQuestionIndex >= chapter.challenges.length) {
+    document.getElementById("game-container").innerHTML =
+      "<p class='text-center font-semibold'>Capítulo completado 🙏</p>";
+    updateProgress();
+    return;
+  }
+
   renderQuestion(chapter.challenges[currentQuestionIndex], chapter.id);
   // render de la pregunta actual, currentQuestionIndex al principio es 0
-
   updateProgress(); // guarda el progreso
 }
 
@@ -43,53 +71,62 @@ function renderChapter(chapter) {
 function renderQuestion(question) {
   const container = document.getElementById("game-container");
 
-  // borra lo anterior e inserta nuevo HTML: Cada pregunta reemplaza la anterior
-  container.innerHTML = ` 
+  container.innerHTML = `
     <div class="bg-white p-6 rounded shadow">
       <h2 class="text-lg font-medium mb-4">
         ${question.question}
       </h2>
 
-      <div class="space-y-2">
-        ${question.options // map recorre el array y devuelve botones
+      <div class="space-y-2" id="options-container">
+        ${question.options
           .map(
-            (option, index) => `
-          <button
-            class="w-full text-left p-3 border rounded hover:bg-gray-100 transition"
-            onclick="handleAnswer(
-                '${index}',
-                '${question.correct}',
-                '${question.id}'
-              )"
+            (option, index) =>
+              `
+            <button
+              class="w-full text-left p-3 border rounded hover:bg-gray-100 transition"
+              data-index="${index}"
             >
-            ${option}  
-          </button>
-        `
+              ${option}
+            </button>
+          `
           )
           .join("")}
       </div>
     </div>
   `;
+
+  const buttons = container.querySelectorAll("button");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const selectedIndex = btn.dataset.index;
+      handleAnswer(selectedIndex, question.correct, question.id);
+    });
+  });
 }
 
 // respuesta del usuario con colores de feedback. Se ejcuta al hacer click en renderQuestion
 function handleAnswer(selectedIndex, correctIndex, questionId) {
+  // normalizar para poder comparar
+  const selected = Number(selectedIndex);
+  const correct = Number(correctIndex);
+
   const buttons = document.querySelectorAll("#game-container button");
 
   buttons.forEach((btn, index) => {
     btn.classList.remove("hover:bg-gray-100");
     btn.classList.add("pointer-events-none");
 
-    if (index == correctIndex) {
+    if (index === correct) {
       btn.classList.add("bg-green-200", "border-green-500", "text-green-900");
     }
 
-    if (index == selectedIndex && selectedIndex !== correctIndex) {
+    if (index === selected && selected !== correct) {
       btn.classList.add("bg-red-200", "border-red-500", "text-red-900");
     }
   });
 
-  const isCorrect = selectedIndex === correctIndex;
+  const isCorrect = Number(selectedIndex) === Number(correctIndex);
   saveAnswer(currentChapter.id, questionId, isCorrect);
   showFeedback(isCorrect, correctIndex);
   showContinueButton(); // botón de continuar
@@ -111,21 +148,7 @@ function showFeedback(isCorrect, correctIndex) {
   }
 }
 
-// guardar respuesta
-function saveAnswer(chapterId, questionId, isCorrect) {
-  const progress = JSON.parse(localStorage.getItem("bg-progress")) || {};
-
-  if (!progress[chapterId]) {
-    progress[chapterId] = { answers: {} };
-  }
-
-  progress[chapterId].answers[questionId] = isCorrect;
-
-  localStorage.setItem("bg-progress", JSON.stringify(progress));
-}
-
 // bloqueo de los botones
-
 function disableAnswers() {
   const buttons = document.querySelectorAll("#game-container button");
 
@@ -170,7 +193,6 @@ function nextQuestion() {
 }
 
 // barra de progreso
-
 function updateProgress() {
   const total = currentChapter.challenges.length;
   const percent = Math.round((currentQuestionIndex / total) * 100);
