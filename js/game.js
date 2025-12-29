@@ -100,7 +100,7 @@ function renderQuestion(question) {
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
       const selectedIndex = btn.dataset.index;
-      handleAnswer(selectedIndex, question.correct, question.id);
+      handleAnswer(selectedIndex, question.correctIndex, question.id);
     });
   });
 }

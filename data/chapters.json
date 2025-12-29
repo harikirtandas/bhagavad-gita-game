@@ -1,48 +1,2246 @@
 [
   {
     "id": 1,
-    "slug": "chapter-1",
-    "title": "Arjuna Viṣāda Yoga",
-    "summary": "En el campo de batalla de Kurukṣetra, Arjuna se ve abrumado por la compasión, el apego y la confusión, y se rehúsa a luchar.",
+    "title": "Observando los ejércitos en el campo de batalla de Kurukṣetra",
+    "summary": "En el campo de batalla de Kurukṣetra, Dhṛtarāṣṭra pregunta a Sañjaya qué hicieron sus hijos y los de Pāṇḍu después de reunirse para la batalla. Sañjaya describe la disposición militar de ambos ejércitos, los guerreros presentes, y los sonidos de caracolas. Arjuna, viendo a sus familiares y amigos en ambos bandos, se llena de compasión y se desanima para luchar.",
+
     "challenges": [
       {
-        "id": 1,
-        "type": "concept",
-        "question": "¿Cuál es la causa principal del desaliento de Arjuna?",
+        "id": "1-1",
+        "question": "¿Qué le pide Arjuna a Kṛṣṇa al comienzo del capítulo 1?",
         "options": [
-          "El miedo a perder la batalla",
-          "La compasión y el apego hacia sus familiares",
-          "La falta de fe en Kṛṣṇa",
-          "El deseo de abandonar el reino"
+          "Que le explique el propósito de la guerra",
+          "Que actúe como mensajero entre ambos bandos",
+          "Que coloque el carro entre los dos ejércitos",
+          "Que toque la caracola para iniciar la batalla"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.21–22"
+      },
+      {
+        "id": "1-2",
+        "question": "¿Por qué Dhṛtarāṣṭra pregunta a Sañjaya qué ocurre en Kurukṣetra?",
+        "options": [
+          "Porque no confía en sus hijos",
+          "Porque es ciego y no puede ver la batalla",
+          "Porque desea intervenir en la guerra",
+          "Porque teme la reacción de Arjuna"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 1.1"
+      },
+      {
+        "id": "1-3",
+        "question": "¿Cuál es la reacción inicial de Duryodhana al ver el ejército de los Pāṇḍavas?",
+        "options": [
+          "Se siente confiado y orgulloso",
+          "Se burla de Bhīma",
+          "Siente ansiedad y comienza a justificar su posición",
+          "Decide retirarse del combate"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.2–11"
+      },
+      {
+        "id": "1-4",
+        "question": "¿Qué efecto producen las caracolas de los Pāṇḍavas al ser tocadas?",
+        "options": [
+          "Aumentan la valentía de los Kauravas",
+          "Destruyen simbólicamente la esperanza de los hijos de Dhṛtarāṣṭra",
+          "Señalan el inicio inmediato del combate",
+          "Confunden a los ejércitos aliados"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 1.13–14"
+      },
+      {
+        "id": "1-5",
+        "question": "¿A quiénes pide Arjuna ver específicamente en ambos ejércitos antes de luchar?",
+        "options": [
+          "A los reyes aliados",
+          "A los soldados jóvenes",
+          "A sus amigos y benefactores",
+          "A los generales principales"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.23–25"
+      },
+      {
+        "id": "1-6",
+        "question": "¿Qué transformación física experimenta Arjuna al observar a sus parientes en el campo de batalla?",
+        "options": [
+          "Se llena de ira",
+          "Su cuerpo tiembla y se le cae el arco",
+          "Siente entusiasmo por la lucha",
+          "Se vuelve silencioso y firme"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 1.28–30"
+      },
+      {
+        "id": "1-7",
+        "question": "Según Arjuna, ¿qué consecuencia trae la destrucción de la familia?",
+        "options": [
+          "El colapso del sistema político",
+          "La pérdida de la prosperidad material",
+          "La interrupción de la tradición religiosa y el surgimiento del adharma",
+          "El castigo inmediato por parte de los devas"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.40–41"
+      },
+      {
+        "id": "1-8",
+        "question": "¿Por qué Arjuna considera pecaminoso matar a sus familiares, incluso si son agresores?",
+        "options": [
+          "Porque perdería el reino",
+          "Porque teme la reacción social",
+          "Porque la felicidad obtenida estaría manchada de pecado",
+          "Porque no está seguro de ganar la guerra"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.36–37"
+      },
+      {
+        "id": "1-9",
+        "question": "¿Cuál es el argumento final de Arjuna para no luchar?",
+        "options": [
+          "No desea gobernar un reino manchado de sangre",
+          "Prefiere vivir como mendigo",
+          "Considera mejor ser muerto sin resistencia",
+          "Todas las anteriores"
+        ],
+        "correctIndex": 3,
+        "verseRef": "BG 1.45–46"
+      },
+      {
+        "id": "1-10",
+        "question": "¿Cómo termina el capítulo 1 de la Bhagavad-gītā?",
+        "options": [
+          "Kṛṣṇa comienza a instruir a Arjuna",
+          "Arjuna se desmaya",
+          "Arjuna se sienta en el carro, deja su arco y queda abrumado por el lamento",
+          "Se inicia la batalla"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 1.47"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "El contenido del Gītā resumido",
+    "summary": "En el capítulo 2, Kṛṣṇa comienza Sus instrucciones a Arjuna. Explica la naturaleza eterna del alma, la diferencia entre el cuerpo y el ser, el deber de actuar según el dharma sin apego a los resultados y los principios básicos del karma-yoga. También describe las características de una persona autorrealizada, estable en conciencia espiritual.",
+
+    "challenges": [
+      {
+        "id": "2-1",
+        "question": "¿Cómo reacciona Kṛṣṇa al ver a Arjuna dominado por la compasión y el lamento?",
+        "options": [
+          "Lo consuela y aprueba su actitud",
+          "Permanece en silencio",
+          "Lo reprende por su debilidad",
+          "Le concede tiempo para reflexionar"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.2–3"
+      },
+      {
+        "id": "2-2",
+        "question": "Según Kṛṣṇa, ¿por qué Arjuna no debería lamentarse?",
+        "options": [
+          "Porque la guerra es inevitable",
+          "Porque los sabios no lamentan ni por los vivos ni por los muertos",
+          "Porque ganará la batalla",
+          "Porque los devas lo protegen"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 2.11"
+      },
+      {
+        "id": "2-3",
+        "question": "¿Cuál es la naturaleza del alma según Kṛṣṇa?",
+        "options": [
+          "Temporal y cambiante",
+          "Creada en el nacimiento",
+          "Eterna, indestructible e inmutable",
+          "Dependiente del cuerpo"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.20"
+      },
+      {
+        "id": "2-4",
+        "question": "¿Qué comparación usa Kṛṣṇa para explicar el cambio de cuerpo del alma?",
+        "options": [
+          "El paso del día a la noche",
+          "El cambio de estaciones",
+          "El cambio de vestimentas",
+          "El crecimiento de una planta"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.22"
+      },
+      {
+        "id": "2-5",
+        "question": "¿Cuál es el deber de Arjuna como kṣatriya según Kṛṣṇa?",
+        "options": [
+          "Evitar la violencia a toda costa",
+          "Renunciar a la vida familiar",
+          "Luchar por una causa justa",
+          "Buscar la meditación en soledad"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.31–33"
+      },
+      {
+        "id": "2-6",
+        "question": "¿Qué resultado obtiene Arjuna si muere luchando conforme a su deber?",
+        "options": [
+          "Liberación inmediata",
+          "Reputación eterna",
+          "Ingreso a los planetas celestiales",
+          "Pérdida de su karma"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.37"
+      },
+      {
+        "id": "2-7",
+        "question": "¿Qué enseña Kṛṣṇa sobre actuar sin apego a los resultados?",
+        "options": [
+          "Que no es necesario actuar",
+          "Que el apego conduce al éxito",
+          "Que se debe actuar como sacrificio, sin deseo personal",
+          "Que solo importa la renunciación externa"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.47"
+      },
+      {
+        "id": "2-8",
+        "question": "¿Cómo describe Kṛṣṇa a una persona de inteligencia firme (sthita-prajña)?",
+        "options": [
+          "Llena de deseos materiales",
+          "Indiferente al dolor y al placer",
+          "Activa solo en rituales",
+          "Aislada del mundo"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 2.56"
+      },
+      {
+        "id": "2-9",
+        "question": "¿Qué sucede con los sentidos no controlados según Kṛṣṇa?",
+        "options": [
+          "Conducen a la iluminación",
+          "Fortalecen la mente",
+          "Arrastran la inteligencia",
+          "No afectan al practicante"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.67"
+      },
+      {
+        "id": "2-10",
+        "question": "¿Cuál es el resultado final de actuar en conciencia de Kṛṣṇa según este capítulo?",
+        "options": [
+          "Riqueza y fama",
+          "Victoria material",
+          "Liberación del ciclo de nacimientos y muertes",
+          "Poder sobre los demás"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 2.71–72"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "El sendero de la acción",
+    "summary": "En el capítulo 3, Kṛṣṇa explica la importancia del karma-yoga: actuar conforme al deber prescrito sin apego a los resultados. Enseña que nadie puede permanecer sin actuar y que el trabajo realizado como sacrificio para Viṣṇu libera al alma. También describe cómo el deseo, nacido del contacto con la pasión, es el principal enemigo del ser viviente.",
+
+    "challenges": [
+      {
+        "id": "3-1",
+        "question": "¿Qué confusión expresa Arjuna al comienzo del capítulo 3?",
+        "options": [
+          "No entiende la diferencia entre el alma y el cuerpo",
+          "No comprende por qué Kṛṣṇa lo incita a luchar si el conocimiento es superior",
+          "No sabe cómo controlar los sentidos",
+          "No entiende el propósito del sacrificio"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 3.1–2"
+      },
+      {
+        "id": "3-2",
+        "question": "Según Kṛṣṇa, ¿puede alguien evitar la acción permaneciendo inactivo?",
+        "options": [
+          "Sí, mediante la meditación",
+          "Sí, mediante el conocimiento",
+          "No, todos están forzados a actuar por las modalidades de la naturaleza",
+          "Solo los renunciantes pueden evitar la acción"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 3.5"
+      },
+      {
+        "id": "3-3",
+        "question": "¿Qué tipo de renunciación considera falsa Kṛṣṇa?",
+        "options": [
+          "Renunciar a los frutos del trabajo",
+          "Abandonar el trabajo externo sin controlar los sentidos",
+          "Ofrecer el trabajo a Viṣṇu",
+          "Actuar sin apego"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 3.6"
+      },
+      {
+        "id": "3-4",
+        "question": "¿Cuál es la forma correcta de actuar según Kṛṣṇa?",
+        "options": [
+          "Actuar solo para beneficio personal",
+          "Actuar conforme al deber prescrito sin apego",
+          "Abandonar toda acción",
+          "Actuar solo cuando hay deseo"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 3.8–9"
+      },
+      {
+        "id": "3-5",
+        "question": "¿Cuál es el propósito del sacrificio según este capítulo?",
+        "options": [
+          "Obtener prosperidad material",
+          "Agradar a los semidioses únicamente",
+          "Liberar al ser humano del cautiverio material",
+          "Mantener el orden social"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 3.13"
+      },
+      {
+        "id": "3-6",
+        "question": "¿Por qué Kṛṣṇa afirma que incluso Él actúa?",
+        "options": [
+          "Para obtener resultados personales",
+          "Para mantener el orden social y dar ejemplo",
+          "Porque está sujeto al karma",
+          "Porque depende de los semidioses"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 3.22–24"
+      },
+      {
+        "id": "3-7",
+        "question": "Según Kṛṣṇa, ¿quién es el verdadero hacedor de la acción?",
+        "options": [
+          "El alma individual",
+          "La mente",
+          "Las modalidades de la naturaleza material",
+          "Los semidioses"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 3.27"
+      },
+      {
+        "id": "3-8",
+        "question": "¿Qué instrucción clave le da Kṛṣṇa a Arjuna respecto a la acción?",
+        "options": [
+          "Abandonar el deber y meditar",
+          "Actuar con apego al resultado",
+          "Ofrecer todas las acciones a Él y luchar sin ansiedad",
+          "Esperar hasta eliminar todo deseo"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 3.30"
+      },
+      {
+        "id": "3-9",
+        "question": "¿Cuál es el principal enemigo del ser viviente según Kṛṣṇa?",
+        "options": [
+          "La ignorancia",
+          "La ira",
+          "El deseo nacido de la pasión",
+          "El apego al conocimiento"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 3.37"
+      },
+      {
+        "id": "3-10",
+        "question": "¿Dónde debe situarse la inteligencia para vencer al deseo?",
+        "options": [
+          "En los sentidos",
+          "En la mente",
+          "En el alma",
+          "En el ser espiritual superior al cuerpo, mente e inteligencia"
+        ],
+        "correctIndex": 3,
+        "verseRef": "BG 3.42–43"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "El conocimiento trascendental",
+    "summary": "En el capítulo 4, Kṛṣṇa explica que Él enseñó este conocimiento supremo a Vivasvān hace mucho tiempo, transmitido de maestro a discípulo hasta llegar a Parāśara y a Vyāsa, y luego a Arjuna. Aquí se describen la naturaleza del conocimiento verdadero (vidyā), la acción sin apego y la importancia de la devoción. Kṛṣṇa enseña cómo actuar como sacrificio, purificar la mente y alcanzar la liberación al transcender los frutos del trabajo.",
+
+    "challenges": [
+      {
+        "id": "4-1",
+        "question": "¿Quién fue el primero en recibir el conocimiento trascendental de Kṛṣṇa?",
+        "options": ["Vyāsa", "Parāśara", "Vivasvān", "Brahmā"],
+        "correctIndex": 2,
+        "verseRef": "BG 4.1"
+      },
+      {
+        "id": "4-2",
+        "question": "Según Kṛṣṇa, ¿por qué el conocimiento verdadero se vuelve raro?",
+        "options": [
+          "Porque es difícil de comprender",
+          "Porque está oculto detrás de rituales externos",
+          "Porque la mayoría se apega a la materia",
+          "Porque solo es para renunciantes"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 4.2–3"
+      },
+      {
+        "id": "4-3",
+        "question": "¿Qué caracteriza al conocimiento supremo?",
+        "options": [
+          "Ser intelectual solamente",
+          "Liberar a la persona del apego a los frutos de las acciones",
+          "Incrementar la memoria",
+          "Enseñar distintas disciplinas"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.4"
+      },
+      {
+        "id": "4-4",
+        "question": "¿Qué debe hacer uno para purificarse antes de aprender este conocimiento?",
+        "options": [
+          "Ayunar tres días",
+          "Controlar los sentidos",
+          "Estudiar con diligencia",
+          "Renunciar completamente al mundo"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.5–6"
+      },
+      {
+        "id": "4-5",
+        "question": "¿Qué clase de acción recomienda Kṛṣṇa para la purificación?",
+        "options": [
+          "Acción sin apego, ofrecida a Viṣṇu",
+          "Acción motivada por resultados",
+          "Retiro del mundo",
+          "Debate filosófico"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 4.8"
+      },
+      {
+        "id": "4-6",
+        "question": "¿Qué ocurre cuando uno actúa con verdadero conocimiento?",
+        "options": [
+          "Acumula más deseos",
+          "Purifica la mente del ignorante",
+          "Pierde su sabiduría",
+          "Debilita su fe"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.17"
+      },
+      {
+        "id": "4-7",
+        "question": "¿Qué pasa con uno que no sigue este conocimiento con humildad?",
+        "options": [
+          "Necesita repetidas vidas para purificarse",
+          "Avanza rápidamente hacia la liberación",
+          "Obtiene renombre material",
+          "Logra la liberación sin esfuerzo"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 4.34"
+      },
+      {
+        "id": "4-8",
+        "question": "¿Cuál es la relación entre acción y conocimiento según este capítulo?",
+        "options": [
+          "El conocimiento elimina la acción",
+          "Ambos deben coexistir en armonía",
+          "El conocimiento se obtiene negando la acción",
+          "La acción sin conocimiento es superior"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.38"
+      },
+      {
+        "id": "4-9",
+        "question": "¿Qué se requiere para que el conocimiento fructifique?",
+        "options": [
+          "Estudio solitario",
+          "Mente tranquila sin deseos",
+          "Renunciar al aprendizaje",
+          "Ambición por éxito"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.39"
+      },
+      {
+        "id": "4-10",
+        "question": "Según Kṛṣṇa, ¿qué debe hacerse para honrar este conocimiento trascendental?",
+        "options": [
+          "Compartirlo con todos sin distinción",
+          "Ofrecer acciones como sacrificio a Viṣṇu",
+          "Debatir en público",
+          "Permanecer en silencio"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 4.42"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "La renunciación de la acción",
+    "summary": "En el capítulo 5, Kṛṣṇa describe la diferencia entre la renunciación (sannyāsa) y la acción con desapego (karma-yoga). Explica que ambos conducen a la liberación cuando se realizan correctamente, y enfatiza que el practicante debe actuar sin apego. También presenta las características del sabio estable en la liberación y la importancia de ver con igualdad a todos los seres.",
+
+    "challenges": [
+      {
+        "id": "5-1",
+        "question": "¿Cuál es la diferencia principal entre sannyāsa y karma-yoga según Kṛṣṇa?",
+        "options": [
+          "Sannyāsa renuncia al cuerpo, karma-yoga no",
+          "Karma-yoga implica acción desapegada, sannyāsa implica renuncia de los frutos",
+          "Sannyāsa es superior en todos los casos",
+          "Karma-yoga no conduce a la liberación"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 5.2–3"
+      },
+      {
+        "id": "5-2",
+        "question": "¿Qué describe Kṛṣṇa como la actitud del ser realizado?",
+        "options": [
+          "Distanciarse de todos los seres",
+          "Ver con igualdad a amigos y enemigos",
+          "Buscar placer en la adicción",
+          "Aferrarse a bienes materiales"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 5.18"
+      },
+      {
+        "id": "5-3",
+        "question": "¿Cómo debe actuar un sabio estable en renunciación según este capítulo?",
+        "options": [
+          "Sin apego y sin deseo por los resultados",
+          "Con ambición de logro espiritual",
+          "Con desapego solo en soledad",
+          "Renunciando toda acción"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 5.10"
+      },
+      {
+        "id": "5-4",
+        "question": "¿Qué dice Kṛṣṇa acerca de aquel que controla la mente con firmeza?",
+        "options": [
+          "Está atado al mundo",
+          "Alcanza la paz interior",
+          "Pierde motivación",
+          "Se convierte en renunciante forzado"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 5.12"
+      },
+      {
+        "id": "5-5",
+        "question": "¿Cuál es la ganancia principal de actuar sin apego?",
+        "options": [
+          "Reputación social",
+          "Paz interior",
+          "Placer sensorial",
+          "Control de los demás"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 5.13–14"
+      },
+      {
+        "id": "5-6",
+        "question": "¿Qué enseñanza da Kṛṣṇa acerca del practicante que medita en Él?",
+        "options": [
+          "Se convierte en sabio sin esfuerzo",
+          "Su mente se fija en Él y alcanza a Él",
+          "Solo obtiene placer temporal",
+          "Es retirado del mundo"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 5.29"
+      },
+      {
+        "id": "5-7",
+        "question": "¿Cuál es la actitud de aquel que ha alcanzado la liberación?",
+        "options": [
+          "Desea renacer entre los hombres",
+          "Es indiferente a todos los seres",
+          "Tiene igualdad frente al placer y al dolor",
+          "Sólo busca retiro"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 5.22"
+      },
+      {
+        "id": "5-8",
+        "question": "¿Cuál es la enseñanza sobre acción y mente en este capítulo?",
+        "options": [
+          "La mente controla la acción",
+          "La acción no afecta al ser",
+          "La mente debe ser controlada para actuar sin apego",
+          "Las acciones no necesitan mente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 5.15"
+      },
+      {
+        "id": "5-9",
+        "question": "¿Qué sucede con aquel que olvida el nombre de Kṛṣṇa?",
+        "options": [
+          "Hecho se pierde en ambición",
+          "Obtiene conocimiento superior",
+          "Es recompensado por los semidioses",
+          "Mantiene la paz interior"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 5.16"
+      },
+      {
+        "id": "5-10",
+        "question": "¿Cuál es el fruto de la acción desapegada tal como lo describe este capítulo?",
+        "options": [
+          "Liberación del ciclo de nacimientos y muertes",
+          "Poder material",
+          "Placer sensorial prolongado",
+          "Respeto social"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 5.19"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "El yoga de la meditación",
+    "summary": "En el capítulo 6, Kṛṣṇa describe el proceso del dhyāna-yoga o yoga de la meditación. Explica que el verdadero renunciante es quien actúa sin apego a los frutos, no quien simplemente abandona la acción. Se detallan las condiciones para la práctica de la meditación, el control de la mente y los sentidos, y el equilibrio necesario en la vida. El capítulo concluye afirmando que el yogui que piensa constantemente en Kṛṣṇa con fe es el más elevado.",
+
+    "challenges": [
+      {
+        "id": "6-1",
+        "question": "¿Quién es considerado un verdadero renunciante según Kṛṣṇa?",
+        "options": [
+          "Quien abandona toda acción",
+          "Quien realiza rituales complejos",
+          "Quien actúa sin apego a los frutos",
+          "Quien vive aislado en el bosque"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.1"
+      },
+      {
+        "id": "6-2",
+        "question": "¿Qué relación establece Kṛṣṇa entre yoga y renunciación?",
+        "options": [
+          "Son caminos opuestos",
+          "La renunciación es superior al yoga",
+          "El yoga verdadero implica renunciación interna",
+          "La renunciación excluye el yoga"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.2"
+      },
+      {
+        "id": "6-3",
+        "question": "¿Qué es necesario para avanzar en el yoga según este capítulo?",
+        "options": [
+          "Abandonar la sociedad",
+          "Controlar la mente y los sentidos",
+          "Practicar austeridades extremas",
+          "Acumular conocimiento intelectual"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 6.5–6"
+      },
+      {
+        "id": "6-4",
+        "question": "¿Cómo describe Kṛṣṇa la mente no controlada?",
+        "options": [
+          "Como una aliada constante",
+          "Como la peor enemiga del ser",
+          "Como neutral",
+          "Como una ilusión temporal sin efecto"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 6.6"
+      },
+      {
+        "id": "6-5",
+        "question": "¿Qué actitud debe tener el yogui en su estilo de vida?",
+        "options": [
+          "Ayuno constante",
+          "Exceso de sueño",
+          "Moderación en comer, dormir y actuar",
+          "Aislamiento absoluto"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.16–17"
+      },
+      {
+        "id": "6-6",
+        "question": "¿Qué experimenta el yogui cuya mente está controlada?",
+        "options": [
+          "Placer sensorial refinado",
+          "Paz y felicidad interior",
+          "Indiferencia total",
+          "Deseo de poder"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 6.20–21"
+      },
+      {
+        "id": "6-7",
+        "question": "¿Cómo ve el yogui perfecto a todos los seres?",
+        "options": [
+          "Como superiores o inferiores",
+          "Con apego selectivo",
+          "Con igualdad",
+          "Como obstáculos"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.29"
+      },
+      {
+        "id": "6-8",
+        "question": "¿Qué pregunta Arjuna acerca de la mente?",
+        "options": [
+          "Si puede ser eliminada",
+          "Si puede ser controlada fácilmente",
+          "Si es naturalmente estable",
+          "Si no influye en el yoga"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 6.33–34"
+      },
+      {
+        "id": "6-9",
+        "question": "¿Cuál es la respuesta de Kṛṣṇa sobre el control de la mente?",
+        "options": [
+          "Es imposible",
+          "Es fácil para todos",
+          "Se logra con práctica y desapego",
+          "Solo ocurre por nacimiento"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.35"
+      },
+      {
+        "id": "6-10",
+        "question": "¿Quién es considerado el yogui más elevado?",
+        "options": [
+          "El asceta severo",
+          "El intelectual",
+          "Quien medita en Kṛṣṇa con fe",
+          "Quien abandona toda acción"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 6.47"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "El conocimiento del Absoluto",
+    "summary": "En el capítulo 7, Kṛṣṇa comienza a revelar Su naturaleza como la causa original de todo lo material y lo espiritual. Explica la diferencia entre Su energía inferior y superior, y cómo todo emana de Él. También describe por qué las almas condicionadas no pueden comprenderlo plenamente y distingue entre distintos tipos de personas que se acercan a Él, destacando al devoto puro como el más elevado.",
+
+    "challenges": [
+      {
+        "id": "7-1",
+        "question": "¿Qué promete Kṛṣṇa enseñar a Arjuna en este capítulo?",
+        "options": [
+          "Conocimiento parcial",
+          "Conocimiento teórico",
+          "Conocimiento completo con realización",
+          "Solo práctica ritual"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.1–2"
+      },
+      {
+        "id": "7-2",
+        "question": "¿Cómo describe Kṛṣṇa Su energía material?",
+        "options": [
+          "Como eterna y consciente",
+          "Como independiente",
+          "Como inferior y separada",
+          "Como inexistente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.4"
+      },
+      {
+        "id": "7-3",
+        "question": "¿Cuál es la energía superior de Kṛṣṇa?",
+        "options": [
+          "Los elementos materiales",
+          "La mente",
+          "Las entidades vivientes",
+          "Los semidioses"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.5"
+      },
+      {
+        "id": "7-4",
+        "question": "¿Qué afirma Kṛṣṇa acerca del origen de todo?",
+        "options": [
+          "Proviene del tiempo",
+          "Proviene del karma",
+          "Todo emana de Él",
+          "No tiene causa"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.6–7"
+      },
+      {
+        "id": "7-5",
+        "question": "¿Por qué las personas no reconocen a Kṛṣṇa?",
+        "options": [
+          "Por falta de estudio",
+          "Por Su misericordia",
+          "Por estar cubiertas por la ilusión",
+          "Por Su ausencia"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.13–14"
+      },
+      {
+        "id": "7-6",
+        "question": "¿Quiénes se entregan a Kṛṣṇa según este capítulo?",
+        "options": [
+          "Solo los renunciantes",
+          "Los eruditos orgullosos",
+          "Cuatro tipos de personas piadosas",
+          "Todos los seres automáticamente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 7.16"
+      },
+      {
+        "id": "7-7",
+        "question": "¿Cuál de estos es considerado el mejor tipo de devoto?",
+        "options": [
+          "El afligido",
+          "El que busca riqueza",
+          "El inquisitivo",
+          "El sabio que conoce a Kṛṣṇa"
+        ],
+        "correctIndex": 3,
+        "verseRef": "BG 7.17"
+      },
+      {
+        "id": "7-8",
+        "question": "¿Cómo describe Kṛṣṇa al devoto sabio?",
+        "options": [
+          "Como desapegado del mundo",
+          "Como muy querido por Él",
+          "Como distante",
+          "Como neutral"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 7.17–18"
+      },
+      {
+        "id": "7-9",
+        "question": "¿Qué sucede con quienes adoran a otros dioses?",
+        "options": [
+          "Llegan a Kṛṣṇa directamente",
+          "Obtienen resultados temporales",
+          "Alcanzan la liberación suprema",
+          "No obtienen ningún fruto"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 7.20–23"
+      },
+      {
+        "id": "7-10",
+        "question": "¿Qué impide a las personas comprender plenamente a Kṛṣṇa?",
+        "options": [
+          "La falta de rituales",
+          "La ignorancia y el engaño",
+          "La escasez de información",
+          "La complejidad filosófica"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 7.25"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "El logro del Supremo",
+    "summary": "En el capítulo 8, Arjuna pregunta sobre Brahman, el alma, el karma y el momento de la muerte. Kṛṣṇa explica que quien Lo recuerda al dejar el cuerpo alcanza Su naturaleza. Se describen distintos destinos después de la muerte, la importancia del recuerdo final y los diferentes caminos —luz y oscuridad— que conducen a la liberación o al retorno al mundo material.",
+
+    "challenges": [
+      {
+        "id": "8-1",
+        "question": "¿Qué determina el destino del alma al momento de la muerte?",
+        "options": [
+          "Las acciones pasadas únicamente",
+          "El conocimiento acumulado",
+          "El estado de conciencia al morir",
+          "El lugar físico de la muerte"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.6"
+      },
+      {
+        "id": "8-2",
+        "question": "¿Qué sucede con quien recuerda a Kṛṣṇa al dejar el cuerpo?",
+        "options": [
+          "Renace como sabio",
+          "Permanece en el mundo material",
+          "Alcanza la naturaleza de Kṛṣṇa",
+          "Se disuelve en Brahman impersonal"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.5"
+      },
+      {
+        "id": "8-3",
+        "question": "¿Qué es Brahman según Kṛṣṇa?",
+        "options": [
+          "La energía material",
+          "El cuerpo físico",
+          "La realidad espiritual indestructible",
+          "La mente cósmica"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.3"
+      },
+      {
+        "id": "8-4",
+        "question": "¿Cómo puede una persona recordar a Kṛṣṇa al morir?",
+        "options": [
+          "Por azar",
+          "Solo mediante rituales finales",
+          "Por práctica constante durante la vida",
+          "Por intervención divina directa"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.7–8"
+      },
+      {
+        "id": "8-5",
+        "question": "¿Qué práctica recomienda Kṛṣṇa para controlar la mente?",
+        "options": [
+          "Silencio absoluto",
+          "Meditación impersonal",
+          "Yoga con devoción",
+          "Renuncia extrema"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.8"
+      },
+      {
+        "id": "8-6",
+        "question": "¿Qué ocurre con quienes alcanzan los planetas superiores?",
+        "options": [
+          "No regresan jamás",
+          "Regresan cuando el mérito se agota",
+          "Se liberan automáticamente",
+          "Se funden con Brahman"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 8.16"
+      },
+      {
+        "id": "8-7",
+        "question": "¿Qué distingue al mundo espiritual del material?",
+        "options": [
+          "Es temporal",
+          "Está lleno de sufrimiento",
+          "No hay nacimiento ni muerte",
+          "Depende del karma"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.20–21"
+      },
+      {
+        "id": "8-8",
+        "question": "¿Qué representan los caminos de la luz y la oscuridad?",
+        "options": [
+          "El día y la noche",
+          "Dos estilos de vida",
+          "Dos destinos del alma después de la muerte",
+          "Dos sistemas filosóficos"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.23"
+      },
+      {
+        "id": "8-9",
+        "question": "¿Qué destino sigue el yogui que conoce estos caminos?",
+        "options": [
+          "Se confunde",
+          "Nunca cae en ilusión",
+          "Regresa al mundo material",
+          "Pierde su mérito"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 8.27"
+      },
+      {
+        "id": "8-10",
+        "question": "¿Qué beneficio supera todos los resultados piadosos?",
+        "options": [
+          "El conocimiento intelectual",
+          "La austeridad",
+          "El servicio devocional",
+          "El control de los sentidos"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 8.28"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "El conocimiento más confidencial",
+    "summary": "En el capítulo 9, Kṛṣṇa revela el conocimiento más confidencial acerca del bhakti-yoga. Explica Su posición como la causa y sostenedor de todo, aunque permanece desapegado. Destaca la potencia del servicio devocional puro, la misericordia divina y asegura que incluso la persona más caída puede alcanzar la perfección si se entrega sinceramente.",
+
+    "challenges": [
+      {
+        "id": "9-1",
+        "question": "¿Cómo describe Kṛṣṇa el conocimiento que va a revelar?",
+        "options": ["Secreto", "Difícil", "El más confidencial", "Incompleto"],
+        "correctIndex": 2,
+        "verseRef": "BG 9.1–2"
+      },
+      {
+        "id": "9-2",
+        "question": "¿Por qué este conocimiento es fácil de practicar?",
+        "options": [
+          "Porque no requiere acción",
+          "Porque se basa en rituales",
+          "Porque se realiza con devoción",
+          "Porque es solo intelectual"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.2"
+      },
+      {
+        "id": "9-3",
+        "question": "¿Qué sucede con quienes no tienen fe en este proceso?",
+        "options": [
+          "Progresan lentamente",
+          "Alcanzan otros planetas",
+          "Regresan al ciclo de nacimientos y muertes",
+          "Se liberan parcialmente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.3"
+      },
+      {
+        "id": "9-4",
+        "question": "¿Cómo se relaciona Kṛṣṇa con el universo material?",
+        "options": [
+          "Está completamente separado",
+          "Está contenido en él",
+          "Lo sostiene sin estar limitado por él",
+          "Depende de él"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.4–5"
+      },
+      {
+        "id": "9-5",
+        "question": "¿Qué impide a los no devotos reconocer a Kṛṣṇa?",
+        "options": [
+          "La falta de inteligencia",
+          "La ignorancia ilusoria",
+          "La ausencia de estudio",
+          "El exceso de rituales"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 9.11–12"
+      },
+      {
+        "id": "9-6",
+        "question": "¿Cómo describe Kṛṣṇa a los grandes devotos?",
+        "options": [
+          "Como ascetas severos",
+          "Como siempre ocupados en Su servicio",
+          "Como filósofos especulativos",
+          "Como neutrales"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 9.13–14"
+      },
+      {
+        "id": "9-7",
+        "question": "¿Qué tipo de adoración recomienda Kṛṣṇa?",
+        "options": [
+          "Solo ritual védico",
+          "Adoración impersonal",
+          "Devoción exclusiva a Él",
+          "Adoración a los semidioses"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.22"
+      },
+      {
+        "id": "9-8",
+        "question": "¿Qué resultado obtienen quienes adoran a los semidioses?",
+        "options": [
+          "Liberación eterna",
+          "Resultados temporales",
+          "Servicio devocional puro",
+          "Conciencia de Kṛṣṇa"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 9.23–25"
+      },
+      {
+        "id": "9-9",
+        "question": "¿Qué actitud hace perfecta una ofrenda a Kṛṣṇa?",
+        "options": [
+          "Su valor material",
+          "La exactitud ritual",
+          "La devoción",
+          "La austeridad"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.26"
+      },
+      {
+        "id": "9-10",
+        "question": "¿Qué promesa da Kṛṣṇa a quien se entrega a Él?",
+        "options": [
+          "Riqueza",
+          "Renombre",
+          "Protección y liberación",
+          "Conocimiento intelectual"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 9.30–34"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "La opulencia del Absoluto",
+    "summary": "En el capítulo 10, Kṛṣṇa explica Su posición como la causa original de todo lo que existe. Describe Sus opulencias divinas (vibhūtis) para ayudar a Arjuna a comprender Su inconcebible grandeza. El capítulo culmina mostrando que todas las manifestaciones extraordinarias provienen solo de una fracción del poder de Kṛṣṇa.",
+
+    "challenges": [
+      {
+        "id": "10-1",
+        "question": "¿Qué afirma Kṛṣṇa acerca de Su origen?",
+        "options": [
+          "Proviene de Brahmā",
+          "Es una manifestación impersonal",
+          "Es la causa original de todo",
+          "Depende del universo material"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.8"
+      },
+      {
+        "id": "10-2",
+        "question": "¿Quién puede comprender verdaderamente las opulencias de Kṛṣṇa?",
+        "options": [
+          "Los filósofos especulativos",
+          "Los semidioses",
+          "Los devotos",
+          "Los ritualistas"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.8–11"
+      },
+      {
+        "id": "10-3",
+        "question": "¿Qué actitud desarrolla el devoto que entiende la posición de Kṛṣṇa?",
+        "options": ["Orgullo", "Duda", "Devoción firme", "Indiferencia"],
+        "correctIndex": 2,
+        "verseRef": "BG 10.9"
+      },
+      {
+        "id": "10-4",
+        "question": "¿De dónde provienen las cualidades como la inteligencia y el conocimiento?",
+        "options": [
+          "De la naturaleza material",
+          "Del esfuerzo humano",
+          "De Kṛṣṇa",
+          "De los semidioses"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.4–5"
+      },
+      {
+        "id": "10-5",
+        "question": "¿Por qué Kṛṣṇa describe Sus opulencias?",
+        "options": [
+          "Para impresionar a Arjuna",
+          "Para demostrar poder",
+          "Para ayudar a recordar Su grandeza",
+          "Para confundir a los no devotos"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.19"
+      },
+      {
+        "id": "10-6",
+        "question": "¿Cómo se relaciona Kṛṣṇa con todo lo existente?",
+        "options": [
+          "Está separado de ello",
+          "Es una parte del todo",
+          "Todo emana de Él",
+          "Depende del universo"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.20"
+      },
+      {
+        "id": "10-7",
+        "question": "¿Qué representa Kṛṣṇa entre las entidades vivientes?",
+        "options": [
+          "El más débil",
+          "El alma colectiva",
+          "La Superalma",
+          "La mente universal"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.20"
+      },
+      {
+        "id": "10-8",
+        "question": "¿Qué enseñan las vibhūtis de Kṛṣṇa?",
+        "options": [
+          "La supremacía del universo",
+          "La igualdad de todos los seres",
+          "La omnipresencia y grandeza de Kṛṣṇa",
+          "La independencia de la materia"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.41"
+      },
+      {
+        "id": "10-9",
+        "question": "¿Qué fracción del poder de Kṛṣṇa sostiene al universo?",
+        "options": ["La mitad", "Todo Su poder", "Una fracción", "Una ilusión"],
+        "correctIndex": 2,
+        "verseRef": "BG 10.42"
+      },
+      {
+        "id": "10-10",
+        "question": "¿Cuál es el resultado de meditar constantemente en Kṛṣṇa?",
+        "options": [
+          "Conocimiento material",
+          "Éxito mundano",
+          "Unión devocional con Él",
+          "Renacimiento superior"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 10.10"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "La forma universal",
+    "summary": "En el capítulo 11, Kṛṣṇa concede a Arjuna visión divina para contemplar Su forma universal (viśva-rūpa). Arjuna observa cómo todo el universo, incluidos los guerreros del campo de batalla, está contenido en Kṛṣṇa. El capítulo establece definitivamente la supremacía de Kṛṣṇa y muestra que Su forma personal es la más confidencial y deseable.",
+
+    "challenges": [
+      {
+        "id": "11-1",
+        "question": "¿Por qué Arjuna pide ver la forma universal?",
+        "options": [
+          "Por curiosidad",
+          "Para confirmar las palabras de Kṛṣṇa",
+          "Para impresionar a los guerreros",
+          "Para obtener poder"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 11.3–4"
+      },
+      {
+        "id": "11-2",
+        "question": "¿Qué necesita Arjuna para ver la forma universal?",
+        "options": [
+          "Más conocimiento",
+          "Ojos divinos",
+          "Austeridad",
+          "Silencio mental"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 11.8"
+      },
+      {
+        "id": "11-3",
+        "question": "¿Qué observa Arjuna dentro del cuerpo de Kṛṣṇa?",
+        "options": [
+          "Solo los semidioses",
+          "El universo completo",
+          "La energía material",
+          "Los Vedas"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 11.13"
+      },
+      {
+        "id": "11-4",
+        "question": "¿Cómo se siente Arjuna al ver la forma universal?",
+        "options": [
+          "Indiferente",
+          "Orgulloso",
+          "Aterrorizado y asombrado",
+          "Confundido"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 11.23–24"
+      },
+      {
+        "id": "11-5",
+        "question": "¿Qué ve Arjuna suceder a los guerreros?",
+        "options": [
+          "Son glorificados",
+          "Son protegidos",
+          "Son devorados por el tiempo",
+          "Son liberados"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 11.26–27"
+      },
+      {
+        "id": "11-6",
+        "question": "¿Cómo se identifica Kṛṣṇa en la forma universal?",
+        "options": [
+          "Como Brahmā",
+          "Como el tiempo destructor",
+          "Como un semidiós",
+          "Como un yogui"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 11.32"
+      },
+      {
+        "id": "11-7",
+        "question": "¿Qué instrucción le da Kṛṣṇa a Arjuna después de revelar la forma universal?",
+        "options": [
+          "Retirarse de la batalla",
+          "Meditar en el vacío",
+          "Actuar como Su instrumento",
+          "Renunciar al deber"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 11.33"
+      },
+      {
+        "id": "11-8",
+        "question": "¿Por qué Arjuna pide volver a ver la forma personal de Kṛṣṇa?",
+        "options": [
+          "Porque duda",
+          "Porque la forma universal es aterradora",
+          "Porque es ignorante",
+          "Porque quiere más poder"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 11.45"
+      },
+      {
+        "id": "11-9",
+        "question": "¿Quién puede ver la forma personal de Kṛṣṇa?",
+        "options": [
+          "Cualquiera",
+          "Los eruditos védicos",
+          "Los devotos",
+          "Los ascetas"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 11.54"
+      },
+      {
+        "id": "11-10",
+        "question": "¿Qué enseñanza central deja este capítulo?",
+        "options": [
+          "La supremacía del tiempo",
+          "La superioridad del conocimiento",
+          "La supremacía personal de Kṛṣṇa",
+          "La ilusión del universo"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 11.55"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "El servicio devocional",
+    "summary": "En el capítulo 12, Arjuna pregunta cuál es el mejor camino: adorar a la forma personal de Kṛṣṇa o al Brahman impersonal. Kṛṣṇa establece claramente la supremacía del servicio devocional, describiendo las cualidades de los devotos puros y mostrando cómo la devoción es el medio más fácil y directo para alcanzarlo.",
+
+    "challenges": [
+      {
+        "id": "12-1",
+        "question": "¿Qué pregunta Arjuna al comienzo del capítulo?",
+        "options": [
+          "Cuál yoga es más poderoso",
+          "Quién es el mejor guerrero",
+          "Quién es el yogui más perfecto",
+          "Qué acción es superior"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.1"
+      },
+      {
+        "id": "12-2",
+        "question": "¿A quién considera Kṛṣṇa el yogui más elevado?",
+        "options": [
+          "Al meditador impersonal",
+          "Al asceta",
+          "Al devoto que lo adora con fe",
+          "Al renunciante"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.2"
+      },
+      {
+        "id": "12-3",
+        "question": "¿Por qué el camino impersonal es difícil?",
+        "options": [
+          "Porque requiere rituales complejos",
+          "Porque es temporal",
+          "Porque es arduo para los encarnados",
+          "Porque es ilusorio"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.5"
+      },
+      {
+        "id": "12-4",
+        "question": "¿Qué promete Kṛṣṇa a quienes se entregan a Él?",
+        "options": [
+          "Riqueza",
+          "Liberación automática",
+          "Rescatarlos del océano del nacimiento y la muerte",
+          "Conocimiento védico"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.6–7"
+      },
+      {
+        "id": "12-5",
+        "question": "¿Qué recomienda Kṛṣṇa si la mente es inestable?",
+        "options": [
+          "Renunciar a todo",
+          "Practicar gradualmente",
+          "Abandonar la devoción",
+          "Solo estudiar"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 12.9"
+      },
+      {
+        "id": "12-6",
+        "question": "¿Qué actitud es superior incluso al conocimiento y la meditación?",
+        "options": [
+          "La austeridad",
+          "La caridad",
+          "La devoción",
+          "El silencio"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.12"
+      },
+      {
+        "id": "12-7",
+        "question": "¿Cómo describe Kṛṣṇa al devoto que le es querido?",
+        "options": ["Orgulloso", "Libre de odio", "Indiferente", "Severo"],
+        "correctIndex": 1,
+        "verseRef": "BG 12.13"
+      },
+      {
+        "id": "12-8",
+        "question": "¿Qué cualidad destaca en el devoto puro?",
+        "options": [
+          "Ambición",
+          "Dependencia material",
+          "Ecuanimidad",
+          "Dominación"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.15–16"
+      },
+      {
+        "id": "12-9",
+        "question": "¿Qué tipo de persona es muy querida por Kṛṣṇa?",
+        "options": [
+          "Quien critica",
+          "Quien se lamenta",
+          "Quien no causa perturbación",
+          "Quien compite"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 12.15"
+      },
+      {
+        "id": "12-10",
+        "question": "¿Qué actitud final define al devoto descrito en este capítulo?",
+        "options": [
+          "Apego al resultado",
+          "Fe y devoción constante",
+          "Control externo",
+          "Renuncia forzada"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 12.20"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "La naturaleza, el disfrutador y la conciencia",
+    "summary": "En el capítulo 13, Kṛṣṇa explica la diferencia entre el campo de actividades (el cuerpo), el conocedor del campo (el alma) y la Superalma. Describe el conocimiento verdadero, la naturaleza material y espiritual, y cómo comprender estas distinciones conduce a la liberación.",
+
+    "challenges": [
+      {
+        "id": "13-1",
+        "question": "¿Qué es el campo de actividades?",
+        "options": ["La mente", "El alma", "El cuerpo", "La inteligencia"],
+        "correctIndex": 2,
+        "verseRef": "BG 13.1–2"
+      },
+      {
+        "id": "13-2",
+        "question": "¿Quién es el conocedor del campo?",
+        "options": [
+          "El cuerpo",
+          "La naturaleza material",
+          "El alma",
+          "La mente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 13.2"
+      },
+      {
+        "id": "13-3",
+        "question": "¿Quién es el conocedor supremo de todos los campos?",
+        "options": [
+          "Brahmā",
+          "El alma individual",
+          "La Superalma",
+          "La materia"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 13.3"
+      },
+      {
+        "id": "13-4",
+        "question": "¿Qué constituye el verdadero conocimiento?",
+        "options": [
+          "Información académica",
+          "Rituales",
+          "Cualidades como la humildad y la no violencia",
+          "Austeridad extrema"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 13.8–12"
+      },
+      {
+        "id": "13-5",
+        "question": "¿Cómo describe Kṛṣṇa a la naturaleza material?",
+        "options": ["Eterna", "Dependiente", "Sin causa", "Independiente"],
+        "correctIndex": 1,
+        "verseRef": "BG 13.19"
+      },
+      {
+        "id": "13-6",
+        "question": "¿Cuál es la posición del alma respecto a la materia?",
+        "options": [
+          "Es idéntica",
+          "Es superior",
+          "Es una ilusión",
+          "Es temporal"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 13.22"
+      },
+      {
+        "id": "13-7",
+        "question": "¿Qué causa la identificación errónea del alma con el cuerpo?",
+        "options": [
+          "La ignorancia",
+          "El conocimiento",
+          "La devoción",
+          "La renuncia"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 13.21"
+      },
+      {
+        "id": "13-8",
+        "question": "¿Qué libera al alma del ciclo de nacimientos?",
+        "options": [
+          "La especulación",
+          "El verdadero conocimiento",
+          "El karma",
+          "La riqueza"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 13.24"
+      },
+      {
+        "id": "13-9",
+        "question": "¿Cómo se alcanza la visión espiritual?",
+        "options": [
+          "Por los sentidos",
+          "Por la mente",
+          "Por el conocimiento",
+          "Por la riqueza"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 13.35"
+      },
+      {
+        "id": "13-10",
+        "question": "¿Cuál es el resultado de comprender esta ciencia?",
+        "options": ["Poder", "Renombre", "Liberación", "Control material"],
+        "correctIndex": 2,
+        "verseRef": "BG 13.35"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Los tres modos de la naturaleza material",
+    "summary": "En el capítulo 14, Kṛṣṇa explica los tres guṇas —bondad, pasión e ignorancia— y cómo condicionan al alma. Describe sus características, resultados y cómo trascenderlos mediante el servicio devocional para alcanzar la liberación espiritual.",
+
+    "challenges": [
+      {
+        "id": "14-1",
+        "question": "¿Qué son los tres guṇas?",
+        "options": [
+          "Estados mentales",
+          "Energías espirituales",
+          "Modos de la naturaleza material",
+          "Etapas del yoga"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 14.5"
+      },
+      {
+        "id": "14-2",
+        "question": "¿Qué cualidad predomina en el modo de la bondad?",
+        "options": ["Ignorancia", "Apego", "Iluminación", "Violencia"],
+        "correctIndex": 2,
+        "verseRef": "BG 14.6"
+      },
+      {
+        "id": "14-3",
+        "question": "¿Qué produce el modo de la pasión?",
+        "options": [
+          "Conocimiento",
+          "Apego y deseo",
+          "Liberación",
+          "Ecuanimidad"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 14.7"
+      },
+      {
+        "id": "14-4",
+        "question": "¿Qué caracteriza al modo de la ignorancia?",
+        "options": ["Claridad", "Servicio", "Ilusión y pereza", "Renuncia"],
+        "correctIndex": 2,
+        "verseRef": "BG 14.8"
+      },
+      {
+        "id": "14-5",
+        "question": "¿Qué destino obtiene quien muere en bondad?",
+        "options": [
+          "Planetas inferiores",
+          "Planetas superiores",
+          "Liberación inmediata",
+          "Reencarnación animal"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 14.14"
+      },
+      {
+        "id": "14-6",
+        "question": "¿Qué resultado da la pasión?",
+        "options": [
+          "Sufrimiento",
+          "Conocimiento",
+          "Nacimiento entre los sabios",
+          "Liberación"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 14.15"
+      },
+      {
+        "id": "14-7",
+        "question": "¿Cómo se puede trascender los tres guṇas?",
+        "options": [
+          "Por austeridad",
+          "Por conocimiento",
+          "Por servicio devocional",
+          "Por rituales"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 14.26"
+      },
+      {
+        "id": "14-8",
+        "question": "¿Cómo actúa quien ha trascendido los guṇas?",
+        "options": [
+          "Reacciona emocionalmente",
+          "Permanece neutral",
+          "Es inactivo",
+          "Busca placer"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 14.22–23"
+      },
+      {
+        "id": "14-9",
+        "question": "¿Qué no perturba al trascendentalista?",
+        "options": [
+          "El dolor y el placer",
+          "El éxito",
+          "El deber",
+          "La renuncia"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 14.24"
+      },
+      {
+        "id": "14-10",
+        "question": "¿Cuál es la base última para trascender la materia?",
+        "options": ["La mente", "El alma individual", "Kṛṣṇa", "La naturaleza"],
+        "correctIndex": 2,
+        "verseRef": "BG 14.27"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "El yoga de la Persona Suprema",
+    "summary": "Krishna describe la existencia material como un árbol invertido cuyas raíces están en lo espiritual y cuyas ramas se expanden en el mundo material, sostenidas por el apego. Explica que el alma es una parte eterna de Él que, al entrar en la naturaleza material, se identifica con la mente y los sentidos. Solo mediante el desapego y el conocimiento espiritual se puede cortar este árbol y regresar al mundo eterno. Krishna afirma que el propósito de los Vedas es conocerlo y se revela como la Persona Suprema, superior tanto al alma individual como al Brahman impersonal.",
+    "challenges": [
+      {
+        "id": "15.1",
+        "question": "¿Cómo describe Krishna al árbol de la existencia material?",
+        "options": [
+          "Como un árbol eterno con raíces hacia arriba",
+          "Como un árbol temporal con raíces hacia abajo",
+          "Como un arbusto sin raíces",
+          "Como un árbol creado por los semidioses"
+        ],
+        "correctIndex": 0,
+        "verseRef": "BG 15.1"
+      },
+      {
+        "id": "15.2",
+        "question": "¿Qué representan las hojas del árbol de la existencia material?",
+        "options": [
+          "Los deseos materiales",
+          "Los Vedas",
+          "Las actividades kármicas",
+          "Los sentidos"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 15.2"
+      },
+      {
+        "id": "15.3",
+        "question": "¿Con qué debe cortarse el árbol del apego material?",
+        "options": [
+          "Con austeridades severas",
+          "Con el arma del desapego",
+          "Con conocimiento intelectual",
+          "Con acciones piadosas"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 15.3"
+      },
+      {
+        "id": "15.4",
+        "question": "¿Qué debe buscarse luego de cortar el árbol de la existencia material?",
+        "options": [
+          "La liberación impersonal",
+          "El planeta más elevado",
+          "El lugar del cual no se regresa",
+          "La fusión con la materia"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 15.4"
+      },
+      {
+        "id": "15.5",
+        "question": "¿Quiénes alcanzan ese estado supremo?",
+        "options": [
+          "Los eruditos",
+          "Los libres de orgullo e ilusión",
+          "Los que realizan sacrificios",
+          "Los ascetas extremos"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 15.5"
+      },
+      {
+        "id": "15.7",
+        "question": "¿Qué es la entidad viviente según Krishna?",
+        "options": [
+          "Una creación temporal",
+          "Una energía material",
+          "Una parte fragmentaria eterna del Señor",
+          "Una ilusión de la mente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 15.7"
+      },
+      {
+        "id": "15.8",
+        "question": "¿Qué arrastra el alma de un cuerpo a otro?",
+        "options": [
+          "El destino",
+          "La mente y los sentidos",
+          "La voluntad divina directa",
+          "El conocimiento previo"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 15.8"
+      },
+      {
+        "id": "15.10",
+        "question": "¿Quiénes pueden ver al alma en el cuerpo?",
+        "options": [
+          "Todos los seres humanos",
+          "Los yoguis iluminados",
+          "Los materialistas",
+          "Los que realizan rituales"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 15.10"
+      },
+      {
+        "id": "15.15",
+        "question": "¿Cuál es el propósito de los Vedas según Krishna?",
+        "options": [
+          "Regular la vida social",
+          "Explicar el karma",
+          "Conocer a Krishna",
+          "Alcanzar los cielos"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 15.15"
+      },
+      {
+        "id": "15.18",
+        "question": "¿Cómo se describe Krishna a Sí mismo en este capítulo?",
+        "options": [
+          "Como el alma individual",
+          "Como el Brahman impersonal",
+          "Como la Persona Suprema",
+          "Como un maestro espiritual"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 15.18"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Las naturalezas divina y demoníaca",
+    "summary": "En este capítulo Krishna distingue entre la naturaleza divina, caracterizada por cualidades como la pureza, la veracidad, la compasión y el autocontrol, y la naturaleza demoníaca, marcada por el orgullo, la ira, la codicia y la ignorancia espiritual. Explica que las cualidades divinas conducen a la liberación, mientras que las demoníacas atan al alma al sufrimiento. Krishna enseña que las escrituras son la guía para saber qué debe hacerse y qué debe evitarse, y que actuar en armonía con ellas protege y eleva la conciencia.",
+    "challenges": [
+      {
+        "id": "16.1",
+        "question": "¿Qué cualidad pertenece a la naturaleza divina?",
+        "options": [
+          "Orgullo excesivo",
+          "No violencia",
+          "Ira constante",
+          "Codicia"
         ],
         "correct": 1,
-        "feedback": "Arjuna se deja dominar por la compasión material y el apego familiar."
+        "verse": "BG 16.1"
       },
       {
-        "id": 2,
-        "type": "concept",
-        "question": "¿Dónde se encuentran los ejércitos al comienzo de la Bhagavad-gītā?",
+        "id": "16.3",
+        "question": "¿Qué sostiene Krishna que caracteriza al ser divino?",
         "options": [
-          "En Hastināpura",
-          "En Dvārakā",
-          "En el campo de batalla de Kurukṣetra",
-          "En el bosque"
+          "Pureza, autocontrol y veracidad",
+          "Dominio sobre otros",
+          "Riqueza material",
+          "Fama y poder"
         ],
-        "correct": 2,
-        "feedback": "La Bhagavad-gītā comienza en el campo de batalla de Kurukṣetra."
+        "correct": 0,
+        "verse": "BG 16.3"
       },
       {
-        "id": 3,
-        "type": "concept",
-        "question": "¿Qué hace Arjuna antes de comenzar la batalla?",
+        "id": "16.4",
+        "question": "¿Qué cualidades son consideradas demoníacas?",
         "options": [
-          "Ataca primero",
-          "Medita en silencio",
-          "Pide a Kṛṣṇa que coloque el carro entre los ejércitos",
-          "Abandona el campo de batalla"
+          "Compasión y humildad",
+          "Veracidad y austeridad",
+          "Orgullo, arrogancia e ira",
+          "Disciplina y estudio"
         ],
         "correct": 2,
-        "feedback": "Arjuna pide ver a quiénes deberá enfrentar en la batalla."
+        "verse": "BG 16.4"
+      },
+      {
+        "id": "16.5",
+        "question": "¿A qué conducen las cualidades divinas?",
+        "options": [
+          "A la prosperidad material",
+          "A la liberación",
+          "Al poder político",
+          "A los planetas celestiales"
+        ],
+        "correct": 1,
+        "verse": "BG 16.5"
+      },
+      {
+        "id": "16.7",
+        "question": "¿Qué desconocen las personas demoníacas?",
+        "options": [
+          "Las reglas sociales",
+          "Qué hacer y qué no hacer",
+          "Los rituales védicos",
+          "La meditación"
+        ],
+        "correct": 1,
+        "verse": "BG 16.7"
+      },
+      {
+        "id": "16.9",
+        "question": "¿Cómo ven el mundo las personas demoníacas?",
+        "options": [
+          "Como una creación divina",
+          "Como eterno y sin causa",
+          "Como ilusorio pero sagrado",
+          "Como una escuela espiritual"
+        ],
+        "correct": 1,
+        "verse": "BG 16.9"
+      },
+      {
+        "id": "16.12",
+        "question": "¿Qué atrapa a las personas demoníacas?",
+        "options": [
+          "El deseo ilimitado",
+          "La disciplina espiritual",
+          "La compasión",
+          "La renuncia"
+        ],
+        "correct": 0,
+        "verse": "BG 16.12"
+      },
+      {
+        "id": "16.16",
+        "question": "¿A qué conduce la confusión demoníaca?",
+        "options": [
+          "A la iluminación",
+          "A la esclavitud material",
+          "Al servicio devocional",
+          "A la liberación inmediata"
+        ],
+        "correct": 1,
+        "verse": "BG 16.16"
+      },
+      {
+        "id": "16.21",
+        "question": "¿Cuáles son las tres puertas al infierno según Krishna?",
+        "options": [
+          "Ignorancia, apego y miedo",
+          "Lujuria, ira y codicia",
+          "Orgullo, riqueza y poder",
+          "Duda, pereza y confusión"
+        ],
+        "correct": 1,
+        "verse": "BG 16.21"
+      },
+      {
+        "id": "16.24",
+        "question": "¿Qué debe tomarse como guía para la acción?",
+        "options": [
+          "La opinión personal",
+          "Las escrituras",
+          "La tradición familiar",
+          "La conveniencia"
+        ],
+        "correct": 1,
+        "verse": "BG 16.24"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Las divisiones de la fe",
+    "summary": "Krishna explica que la fe de cada persona se manifiesta de acuerdo con las tres modalidades de la naturaleza material: bondad, pasión e ignorancia. Estas influyen en el tipo de adoración, austeridad, caridad y alimentación que uno practica. Se aclara que los actos realizados sin referencia a las escrituras ni a la conciencia espiritual carecen de valor duradero. Krishna concluye destacando la importancia de actuar con fe correcta y con la guía del conocimiento trascendental.",
+    "challenges": [
+      {
+        "id": "17-1",
+        "question": "¿Según Krishna, de qué dependen las diferentes clases de fe?",
+        "options": [
+          "De la educación recibida",
+          "De la modalidad de la naturaleza que predomina en la persona",
+          "Del lugar de nacimiento",
+          "De la cantidad de rituales realizados"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 17.2–3"
+      },
+      {
+        "id": "17-2",
+        "question": "¿Cómo se describe la adoración en la modalidad de la ignorancia?",
+        "options": [
+          "Dirigida a los semidioses",
+          "Realizada siguiendo estrictamente las escrituras",
+          "Realizada sin reglas y con daño a otros",
+          "Basada en el desapego"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.4"
+      },
+      {
+        "id": "17-3",
+        "question": "¿Qué caracteriza a la austeridad en la modalidad de la bondad?",
+        "options": [
+          "Produce dolor a otros",
+          "Se realiza con orgullo",
+          "Es practicada con fe y según las escrituras",
+          "Busca recompensas materiales"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.14–16"
+      },
+      {
+        "id": "17-4",
+        "question": "¿Cuál es el propósito de la caridad en la modalidad de la bondad?",
+        "options": [
+          "Obtener prestigio",
+          "Recibir algo a cambio",
+          "Dar en el momento y lugar apropiados sin esperar recompensa",
+          "Demostrar superioridad moral"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.20"
+      },
+      {
+        "id": "17-5",
+        "question": "¿Qué indica la palabra 'Om Tat Sat' según Krishna?",
+        "options": [
+          "Una fórmula ritual externa",
+          "La verdad absoluta expresada en sonido",
+          "Un mantra exclusivo para renunciantes",
+          "Un símbolo cultural védico"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 17.23"
+      },
+      {
+        "id": "17-6",
+        "question": "¿Qué ocurre con los actos realizados sin fe ni guía escritural?",
+        "options": [
+          "Otorgan liberación gradual",
+          "Carecen de valor espiritual",
+          "Son superiores a los rituales",
+          "Purifican automáticamente"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 17.28"
+      },
+      {
+        "id": "17-7",
+        "question": "¿Qué tipo de alimentos corresponden a la modalidad de la bondad?",
+        "options": [
+          "Alimentos demasiado amargos y picantes",
+          "Alimentos en descomposición",
+          "Alimentos frescos, sabrosos y nutritivos",
+          "Alimentos consumidos con violencia"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.8"
+      },
+      {
+        "id": "17-8",
+        "question": "¿Qué caracteriza a la caridad en la modalidad de la pasión?",
+        "options": [
+          "Se da sin esperar nada a cambio",
+          "Se da con resentimiento",
+          "Se da esperando una recompensa futura",
+          "Se da en el momento inapropiado"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.21"
+      },
+      {
+        "id": "17-9",
+        "question": "¿Cómo se describe la austeridad en la modalidad de la ignorancia?",
+        "options": [
+          "Practicada según las escrituras",
+          "Realizada para autodestrucción o daño a otros",
+          "Basada en el autocontrol",
+          "Dedicada a Vishnu"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 17.19"
+      },
+      {
+        "id": "17-10",
+        "question": "¿Qué ocurre con los sacrificios realizados sin fe ni guía espiritual?",
+        "options": [
+          "Conducen a la liberación",
+          "Otorgan méritos eternos",
+          "Son considerados inútiles",
+          "Purifican gradualmente"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 17.28"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "La perfección de la renuncia",
+    "summary": "Krishna concluye la Bhagavad-gītā explicando el verdadero significado de la renuncia y el desapego, mostrando cómo las acciones deben realizarse sin apego a los resultados. Describe las modalidades aplicadas al conocimiento, la acción, el deber y el agente, y explica el dharma de acuerdo con la naturaleza de cada persona. Krishna revela que la devoción pura es el medio supremo para conocerlo plenamente y culmina instruyendo a Arjuna a rendirse completamente a Él, prometiendo liberación de toda reacción.",
+    "challenges": [
+      {
+        "id": "18-1",
+        "question": "¿Cómo define Krishna la verdadera renuncia?",
+        "options": [
+          "Abandonar toda acción",
+          "Rechazar el mundo material",
+          "Actuar sin apego a los resultados",
+          "Retirarse a la vida monástica"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.2–6"
+      },
+      {
+        "id": "18-2",
+        "question": "¿Qué determina el deber específico de una persona?",
+        "options": [
+          "Su linaje familiar",
+          "La modalidad de la naturaleza que predomina en ella",
+          "La edad y la riqueza",
+          "La aprobación social"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 18.41–44"
+      },
+      {
+        "id": "18-3",
+        "question": "¿Cuál es el medio supremo para conocer plenamente a Krishna?",
+        "options": [
+          "El conocimiento especulativo",
+          "Las austeridades severas",
+          "La devoción pura",
+          "El desapego material"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.55"
+      },
+      {
+        "id": "18-4",
+        "question": "¿Qué le aconseja Krishna finalmente a Arjuna?",
+        "options": [
+          "Que actúe según su propia opinión",
+          "Que abandone toda acción",
+          "Que se rinda completamente a Él",
+          "Que busque la liberación impersonal"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.66"
+      },
+      {
+        "id": "18-5",
+        "question": "¿Qué promete Krishna a quien se rinde completamente a Él?",
+        "options": [
+          "Prosperidad material",
+          "Conocimiento védico perfecto",
+          "Liberación de todas las reacciones",
+          "Renombre espiritual"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.66"
+      },
+      {
+        "id": "18-6",
+        "question": "¿Qué modalidad caracteriza a la acción realizada sin apego y sin deseo de recompensa?",
+        "options": [
+          "Ignorancia",
+          "Pasión",
+          "Bondad",
+          "Trascendentalismo impersonal"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.23"
+      },
+      {
+        "id": "18-7",
+        "question": "¿Cómo se describe el conocimiento en la modalidad de la bondad?",
+        "options": [
+          "Ve muchas realidades independientes",
+          "Está basado solo en rituales",
+          "Ve una misma naturaleza espiritual en todos los seres",
+          "Niega la existencia del alma"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.20"
+      },
+      {
+        "id": "18-8",
+        "question": "¿Qué caracteriza al trabajador en la modalidad de la pasión?",
+        "options": [
+          "Es desapegado y ecuánime",
+          "Está motivado por el éxito y la ganancia",
+          "Actúa solo por deber",
+          "Renuncia a toda acción"
+        ],
+        "correctIndex": 1,
+        "verseRef": "BG 18.27"
+      },
+      {
+        "id": "18-9",
+        "question": "¿Cuál es la instrucción más confidencial que Krishna da a Arjuna?",
+        "options": [
+          "Practicar yoga silencioso",
+          "Estudiar todos los Vedas",
+          "Rendirse completamente a Él",
+          "Abandonar el campo de batalla"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.64–66"
+      },
+      {
+        "id": "18-10",
+        "question": "¿Qué resultado obtiene quien escucha y estudia este diálogo con fe?",
+        "options": [
+          "Méritos rituales",
+          "Prosperidad material",
+          "Liberación espiritual",
+          "Conocimiento académico"
+        ],
+        "correctIndex": 2,
+        "verseRef": "BG 18.71–73"
       }
     ]
   }
