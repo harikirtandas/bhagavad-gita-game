@@ -85,7 +85,7 @@ function renderQuestion(question) {
             (option, index) =>
               `
             <button
-              class="w-full text-left p-3 border rounded hover:bg-gray-100 transition"
+              class="w-full text-left p-3 border rounded hover:bg-slate-100 transition"
               data-index="${index}"
             >
               ${option}

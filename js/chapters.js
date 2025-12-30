@@ -16,7 +16,7 @@ function renderChapters(chapters) {
     const li = document.createElement("li");
 
     li.className =
-      "bg-white p-4 rounded shadow cursor-pointer hover:bg-gray-50 transition";
+      "bg-white p-4 rounded shadow cursor-pointer hover:bg-slate-100 transition";
 
     li.innerHTML = `
       <h2 class="text-lg font-medium">
