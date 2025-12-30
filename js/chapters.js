@@ -1,41 +1,50 @@
 import { getGlobalScore } from "./storage.js";
+import { CHAPTERS } from "./challenges-data.js";
 
-fetch("data/chapters.json")
-  .then((response) => response.json())
-  .then((chapters) => {
-    renderChapters(chapters);
-  })
-  .catch((error) => {
-    console.error("Error cargando los capítulos:", error);
-  });
+// Score global
+const score = getGlobalScore();
+document.querySelector("#global-score").textContent = `${score}%`;
 
-function renderChapters(chapters) {
-  const list = document.getElementById("chapters-list");
+// 1. Leer path desde la URL
+const params = new URLSearchParams(window.location.search);
+const path = params.get("path");
 
-  chapters.forEach((chapter) => {
-    const li = document.createElement("li");
-
-    li.className =
-      "bg-white p-4 rounded shadow cursor-pointer hover:bg-slate-100 transition";
-
-    li.innerHTML = `
-      <h2 class="text-lg font-medium">
-        Capítulo ${chapter.id}: ${chapter.title}
-      </h2>
-      <p class="text-sm text-gray-600 mt-1">
-        ${chapter.summary}
-      </p>
-    `;
-
-    li.addEventListener("click", () => {
-      window.location.href = `game.html?chapter=${chapter.id}`;
-    });
-
-    list.appendChild(li);
-  });
+// 2. Validación
+if (!path) {
+  alert("No se eligió un camino.");
+  window.location.href = "challenges.html";
 }
 
-const score = getGlobalScore();
+// 3. Filtrar capítulos
+const filteredChapters = CHAPTERS.filter((chapter) => chapter.path === path);
 
-const scoreElement = document.querySelector("#global-score");
-scoreElement.textContent = `${score}%`;
+// 4. Título dinámico
+const titleMap = {
+  karma: "⚔️ El Campo de Batalla",
+  bhakti: "❤️ El Corazón del Guerrero",
+  jnana: "👁️ La Visión Clara",
+};
+
+document.getElementById("chapters-title").textContent =
+  titleMap[path] || "Capítulos";
+
+// 5. Render capítulos
+const list = document.getElementById("chapters-list");
+list.innerHTML = "";
+
+filteredChapters.forEach((chapter) => {
+  const li = document.createElement("li");
+  li.className =
+    "bg-white p-4 rounded shadow hover:bg-slate-50 cursor-pointer transition";
+
+  li.innerHTML = `
+    <h2 class="font-semibold">${chapter.title}</h2>
+    <p class="text-sm text-gray-500">${chapter.subtitle}</p>
+  `;
+
+  li.addEventListener("click", () => {
+    window.location.href = `game.html?chapter=${chapter.id}&path=${path}`;
+  });
+
+  list.appendChild(li);
+});
