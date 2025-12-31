@@ -5,13 +5,43 @@
     <title>La Gran Batalla · Challenges</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+  <nav
+    class="bg-slate-700 rounded text-white mb-4 px-6 py-4 flex justify-between items-center"
+  >
+    <!-- Izquierda: título -->
+    <h1 class="text-lg font-semibold">La Gran Batalla</h1>
+
+    <!-- Derecha: opciones (sin score) -->
+    <div class="flex items-center gap-6 relative">
+      <div class="relative">
+        <button
+          id="options-button"
+          class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+        >
+          Opciones ▾
+        </button>
+
+        <div
+          id="options-menu"
+          class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
+        >
+          <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+            Inicio
+          </a>
+          <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+            Salir
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
   <body class="bg-gray-100 min-h-screen p-6">
     <!-- Fondo semi-transparente -->
     <div
       class="absolute inset-0"
       style="
-        background-image: url('assets/images/pixel-krishna-arjuna.png');
+        background-image: url('../assets/images/pixel-krishna-arjuna.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -21,46 +51,44 @@
       "
     ></div>
     <div class="max-w-xl mx-auto space-y-6">
-      <h1 class="text-3xl font-semibold text-center text-slate-700">
-        La Gran Batalla
-      </h1>
+      <!-- CONTENEDOR DE CONTENIDO -->
+      <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow space-y-6">
+        <!-- Karma Yoga -->
+        <div
+          class="max-w-xl w-full bg-white/30 p-8 rounded shadow relative z-10 hover:bg-white/90 transition-colors duration-300"
+          data-path="karma"
+        >
+          <h2 class="text-xl font-semibold">⚔️ El Campo de Batalla</h2>
+          <p class="text-sm text-gray-500">Karma Yoga · Capítulos 1–6</p>
+          <p class="mt-2 italic text-gray-700">Aprender a actuar sin apego.</p>
+        </div>
 
-      <p class="text-center text-gray-600">
-        Elegí el tipo de batalla que estás dispuesto a librar.
-      </p>
+        <!-- Bhakti Yoga -->
+        <div
+          class="max-w-xl w-full bg-white/30 p-8 rounded shadow relative z-10 hover:bg-white/90 transition-colors duration-300"
+          data-path="bhakti"
+        >
+          <h2 class="text-xl font-semibold">❤️ El Corazón del Guerrero</h2>
+          <p class="text-sm text-gray-500">Bhakti Yoga · Capítulos 7–12</p>
+          <p class="mt-2 italic text-gray-700">
+            Aprender a confiar y entregarse.
+          </p>
+        </div>
 
-      <!-- Karma Yoga -->
-      <div
-        class="bg-white p-6 rounded shadow hover:bg-slate-50 cursor-pointer transition"
-        data-path="karma"
-      >
-        <h2 class="text-xl font-semibold">⚔️ El Campo de Batalla</h2>
-        <p class="text-sm text-gray-500">Karma Yoga · Capítulos 1–6</p>
-        <p class="mt-2 italic text-gray-700">Aprender a actuar sin apego.</p>
-      </div>
-
-      <!-- Bhakti Yoga -->
-      <div
-        class="bg-white p-6 rounded shadow hover:bg-slate-50 cursor-pointer transition"
-        data-path="bhakti"
-      >
-        <h2 class="text-xl font-semibold">❤️ El Corazón del Guerrero</h2>
-        <p class="text-sm text-gray-500">Bhakti Yoga · Capítulos 7–12</p>
-        <p class="mt-2 italic text-gray-700">
-          Aprender a confiar y entregarse.
-        </p>
-      </div>
-
-      <!-- Jñāna Yoga -->
-      <div
-        class="bg-white p-6 rounded shadow hover:bg-slate-50 cursor-pointer transition"
-        data-path="jnana"
-      >
-        <h2 class="text-xl font-semibold">👁️ La Visión Clara</h2>
-        <p class="text-sm text-gray-500">Jñāna Yoga · Capítulos 13–18</p>
-        <p class="mt-2 italic text-gray-700">Aprender a discernir y soltar.</p>
+        <!-- Jñāna Yoga -->
+        <div
+          class="max-w-xl w-full bg-white/30 p-8 rounded shadow relative z-10 hover:bg-white/90 transition-colors duration-300"
+          data-path="jnana"
+        >
+          <h2 class="text-xl font-semibold">👁️ La Visión Clara</h2>
+          <p class="text-sm text-gray-500">Jñāna Yoga · Capítulos 13–18</p>
+          <p class="mt-2 italic text-gray-700">
+            Aprender a discernir y soltar.
+          </p>
+        </div>
       </div>
     </div>
     <script src="../js/challenges.js"></script>
+    <script src="../js/navbar.js"></script>
   </body>
 </html>

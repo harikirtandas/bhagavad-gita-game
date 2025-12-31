@@ -7,12 +7,47 @@
   </head>
 
   <!-- navbar -->
+  <!-- navbar -->
   <nav
     class="bg-slate-700 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
   >
-    <h1 class="text-lg font-semibold">Bhagavad-gītā Quiz</h1>
+    <!-- Izquierda: título -->
+    <h1 class="text-lg font-semibold" id="chapters-title">
+      Capítulos de la Bhagavad-gītā
+    </h1>
 
-    <div class="text-sm">Score: <span id="global-score">0%</span></div>
+    <!-- Derecha: score + opciones -->
+    <div class="flex items-center gap-6 relative">
+      <!-- Score -->
+      <div class="text-sm">Score: <span id="global-score">0%</span></div>
+
+      <!-- Dropdown -->
+      <div class="relative">
+        <button
+          id="options-button"
+          class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+        >
+          Opciones ▾
+        </button>
+
+        <div
+          id="options-menu"
+          class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
+        >
+          <a href="challenges.html" class="block px-4 py-2 hover:bg-slate-100">
+            Desafíos
+          </a>
+
+          <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+            Inicio
+          </a>
+
+          <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+            Salir
+          </a>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <body class="bg-gray-100 min-h-screen p-6">
@@ -20,7 +55,7 @@
     <div
       class="absolute inset-0"
       style="
-        background-image: url('assets/images/pixel-krishna-arjuna.png');
+        background-image: url('../assets/images/pixel-krishna-arjuna.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -29,45 +64,48 @@
         z-index: -1;
       "
     ></div>
-    <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
-      <!-- volver -->
-      <button
-        id="back-to-chapters"
-        class="mb-4 text-sm text-blue-600 hover:underline"
-      >
-        ← Volver a capítulos
-      </button>
+    <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow space-y-6">
+      <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+        <!-- volver -->
+        <button
+          id="back-to-chapters"
+          class="mb-4 text-sm text-blue-600 hover:underline"
+        >
+          ← Volver
+        </button>
 
-      <!-- Capítulo -->
-      <h1 id="chapter-title" class="text-2xl font-semibold mb-2">
-        Cargando capítulo...
-      </h1>
+        <!-- Capítulo -->
+        <h1 id="chapter-title" class="text-2xl font-semibold mb-2">
+          Cargando capítulo...
+        </h1>
 
-      <p id="chapter-summary" class="text-gray-600 mb-6"></p>
+        <p id="chapter-summary" class="text-gray-600 mb-6"></p>
 
-      <!-- Progreso -->
-      <div class="mb-6">
-        <div class="w-full bg-gray-200 rounded-full h-2">
-          <div
-            id="progress-bar"
-            class="bg-green-500 h-2 rounded-full"
-            style="width: 0%"
-          ></div>
+        <!-- Progreso -->
+        <div class="mb-6">
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div
+              id="progress-bar"
+              class="bg-green-500 h-2 rounded-full"
+              style="width: 0%"
+            ></div>
+          </div>
+          <p id="progress-text" class="text-sm text-gray-500 mt-1">
+            Progreso: 0%
+          </p>
         </div>
-        <p id="progress-text" class="text-sm text-gray-500 mt-1">
-          Progreso: 0%
-        </p>
-      </div>
 
-      <!-- Juego -->
-      <div id="game-container" class="space-y-4">
-        <!-- Pregunta y opciones se renderizan acá -->
-      </div>
+        <!-- Juego -->
+        <div id="game-container" class="space-y-4">
+          <!-- Pregunta y opciones se renderizan acá -->
+        </div>
 
-      <!-- Feedback -->
-      <div id="feedback" class="mt-4 font-semibold text-center"></div>
+        <!-- Feedback -->
+        <div id="feedback" class="mt-4 font-semibold text-center"></div>
+      </div>
     </div>
 
     <script type="module" src="../js/game.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
   </body>
 </html>

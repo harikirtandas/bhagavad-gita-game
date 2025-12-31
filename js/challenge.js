@@ -16,6 +16,14 @@ const challenge = CHALLENGES[path];
 // 4. Render UI
 document.getElementById("challenge-title").textContent = challenge.title;
 document.getElementById("challenge-subtitle").textContent = challenge.subtitle;
+document.getElementById("challenge-condition").textContent =
+  challenge.condition;
+
+const navbarTitle = document.getElementById("navbar-title");
+
+if (navbarTitle) {
+  navbarTitle.textContent = challenge.condition;
+}
 
 // narrativa
 const textContainer = document.getElementById("challenge-text");
@@ -26,10 +34,6 @@ challenge.narrative.forEach((paragraph) => {
   p.textContent = paragraph;
   textContainer.appendChild(p);
 });
-
-// condición
-document.getElementById("challenge-condition").textContent =
-  challenge.condition;
 
 // 5. Botón → capítulos
 document.getElementById("enter-challenge").addEventListener("click", () => {

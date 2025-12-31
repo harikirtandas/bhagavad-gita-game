@@ -23,10 +23,15 @@ const chapterId = params.get("chapter"); // 1
 if (!chapterId) {
   alert("No se seleccionó ningún capítulo.");
 }
-
-// Volver a capítuos
+// Volver a los capítulos del challenge actual
 document.getElementById("back-to-chapters")?.addEventListener("click", () => {
-  window.location.href = "chapters.html";
+  const params = new URLSearchParams(window.location.search);
+  const path = params.get("path"); // obtener el path del challenge actual
+  if (path) {
+    window.location.href = `chapters.html?path=${path}`;
+  } else {
+    window.location.href = "challenges.html"; // fallback por si no hay path
+  }
 });
 
 // 	fetch → datos  - find → lógica - renderChapter → UI

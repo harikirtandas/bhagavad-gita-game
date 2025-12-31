@@ -23,17 +23,56 @@
     <nav
       class="bg-slate-700 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
     >
+      <!-- Izquierda: título -->
       <h1 class="text-lg font-semibold" id="chapters-title">
         Capítulos de la Bhagavad-gītā
       </h1>
 
-      <div class="text-sm">Score: <span id="global-score">0%</span></div>
+      <!-- Derecha: score + opciones -->
+      <div class="flex items-center gap-6 relative">
+        <!-- Score -->
+        <div class="text-sm">Score: <span id="global-score">0%</span></div>
+
+        <!-- Dropdown -->
+        <div class="relative">
+          <button
+            id="options-button"
+            class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+          >
+            Opciones ▾
+          </button>
+
+          <div
+            id="options-menu"
+            class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
+          >
+            <a
+              href="challenges.html"
+              class="block px-4 py-2 hover:bg-slate-100"
+            >
+              Desafíos
+            </a>
+
+            <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+              Inicio
+            </a>
+
+            <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
+              Salir
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <ul id="chapters-list" class="space-y-4">
-      <!-- Los capítulos se cargan acá -->
-    </ul>
+    <!-- CONTENEDOR DE CONTENIDO -->
+    <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow">
+      <ul id="chapters-list" class="space-y-4">
+        <!-- capítulos -->
+      </ul>
+    </div>
 
     <script type="module" src="../js/chapters.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
   </body>
 </html>
