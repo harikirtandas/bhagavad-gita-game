@@ -16,6 +16,19 @@
   </nav>
 
   <body class="bg-gray-100 min-h-screen p-6">
+    <!-- Fondo semi-transparente -->
+    <div
+      class="absolute inset-0"
+      style="
+        background-image: url('assets/images/pixel-krishna-arjuna.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        image-rendering: pixelated;
+        opacity: 0.9;
+        z-index: -1;
+      "
+    ></div>
     <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
       <!-- volver -->
       <button
@@ -55,6 +68,6 @@
       <div id="feedback" class="mt-4 font-semibold text-center"></div>
     </div>
 
-    <script type="module" src="js/game.js"></script>
+    <script type="module" src="../js/game.js"></script>
   </body>
 </html>

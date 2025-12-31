@@ -7,7 +7,7 @@ const path = params.get("path");
 // 2. Validación básica
 if (!path || !CHALLENGES[path]) {
   alert("Desafío no válido.");
-  window.location.href = "challenges.html";
+  window.location.href = "views/challenges.html";
 }
 
 // 3. Obtener el challenge

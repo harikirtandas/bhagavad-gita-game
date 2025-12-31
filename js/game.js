@@ -34,7 +34,7 @@ document.getElementById("back-to-chapters")?.addEventListener("click", () => {
 // 🔹 find: Selecciona UN dato de muchos
 // 🔹 render: Muestra datos en pantalla
 
-fetch("data/chapters.json") // pido (hace una peticion http) un recurso. asíncrono
+fetch("../data/chapters.json") // pido (hace una peticion http) un recurso. asíncrono
   .then((response) => response.json()) // response = respuesta HTTP
   .then((chapters) => {
     // chapters: array de capítulos

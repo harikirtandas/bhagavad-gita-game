@@ -7,6 +7,19 @@
   </head>
 
   <body class="bg-gray-100 min-h-screen p-6">
+    <!-- Fondo semi-transparente -->
+    <div
+      class="absolute inset-0"
+      style="
+        background-image: url('assets/images/pixel-krishna-arjuna.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        image-rendering: pixelated;
+        opacity: 0.9;
+        z-index: -1;
+      "
+    ></div>
     <div class="max-w-xl mx-auto space-y-6">
       <h1 class="text-3xl font-semibold text-center text-slate-700">
         La Gran Batalla
@@ -48,6 +61,6 @@
         <p class="mt-2 italic text-gray-700">Aprender a discernir y soltar.</p>
       </div>
     </div>
-    <script src="js/challenges.js"></script>
+    <script src="../js/challenges.js"></script>
   </body>
 </html>

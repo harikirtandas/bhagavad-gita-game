@@ -6,6 +6,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 min-h-screen p-6">
+    <!-- Fondo semi-transparente -->
+    <div
+      class="absolute inset-0"
+      style="
+        background-image: url('../assets/images/pixel-krishna-arjuna.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        image-rendering: pixelated;
+        opacity: 0.9;
+        z-index: -1;
+      "
+    ></div>
     <!-- navbar -->
     <nav
       class="bg-slate-700 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
@@ -21,6 +34,6 @@
       <!-- Los capítulos se cargan acá -->
     </ul>
 
-    <script type="module" src="js/chapters.js"></script>
+    <script type="module" src="../js/chapters.js"></script>
   </body>
 </html>
