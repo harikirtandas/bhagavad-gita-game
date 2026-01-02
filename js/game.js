@@ -221,3 +221,7 @@ function updateGlobalScore() {
 }
 
 updateGlobalScore();
+
+document.addEventListener("DOMContentLoaded", () => {
+  playMusic("game");
+});

@@ -5,6 +5,7 @@ export const CHALLENGES = {
     yoga: "Karma Yoga",
     chapters: [1, 6],
     subtitle: "Karma Yoga · Capítulos 1–6",
+    background: "../assets/images/3.png",
     narrative: [
       "Estás en el centro del campo de batalla.",
       "Frente a vos, aquello que amás y aquello que temés.",
@@ -12,7 +13,7 @@ export const CHALLENGES = {
       "La duda inmoviliza, pero el deber llama.",
       "En esta etapa, la enseñanza no es huir, sino aprender a actuar sin quedar atrapado en el resultado.",
     ],
-    condition: "🟠 Aprender a actuar sin apego.",
+    condition: "Aprender a actuar sin apego.",
   },
 
   bhakti: {
@@ -21,6 +22,7 @@ export const CHALLENGES = {
     yoga: "Bhakti Yoga",
     chapters: [7, 12],
     subtitle: "Bhakti Yoga · Capítulos 7–12",
+    background: "../assets/images/1.png",
     narrative: [
       "El guerrero ya está en movimiento,",
       "pero descubre que su fuerza no nace del esfuerzo, sino del vínculo.",
@@ -28,7 +30,7 @@ export const CHALLENGES = {
       "es la presencia constante en cada acción.",
       "En esta etapa, la batalla se transforma en relación y entrega.",
     ],
-    condition: "🔵 Aprender a confiar.",
+    condition: "Aprender a confiar.",
   },
 
   jnana: {
@@ -37,6 +39,7 @@ export const CHALLENGES = {
     yoga: "Jñāna Yoga",
     chapters: [13, 18],
     subtitle: "Jñāna Yoga · Capítulos 13–18",
+    background: "../assets/images/otras/6.png",
     narrative: [
       "La batalla externa se aquieta.",
       "Ahora la pregunta es: ¿quién lucha y quién observa?",
@@ -44,7 +47,7 @@ export const CHALLENGES = {
       "lo transitorio de lo eterno,",
       "es el último desafío.",
     ],
-    condition: "🟣 Aprender a discernir y soltar.",
+    condition: "Aprender a discernir y soltar.",
   },
 };
 

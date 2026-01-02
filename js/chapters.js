@@ -48,3 +48,7 @@ filteredChapters.forEach((chapter) => {
 
   list.appendChild(li);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  playMusic("chapter");
+});
