@@ -50,3 +50,17 @@ document.getElementById("enter-challenge").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   playMusic("challenge");
 });
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const path = card.dataset.path;
+
+    sessionStorage.setItem("previousView", window.location.href);
+
+    playBattleMusic();
+
+    setTimeout(() => {
+      window.location.href = `challenge.html?path=${path}`;
+    }, 300);
+  });
+});

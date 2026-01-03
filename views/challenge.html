@@ -8,12 +8,27 @@
   <nav
     class="bg-slate-700 rounded text-white mb-4 px-6 py-4 flex justify-between items-center"
   >
-    <!-- Izquierda: título -->
-    <h1 class="text-lg font-semibold" id="navbar-title">La Gran Batalla</h1>
-
+    <div class="flex items-center">
+      <button
+        id="back-button"
+        class="mr-4 text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+        title="Volver"
+      >
+        ←
+      </button>
+      <!-- Izquierda: título -->
+      <h1 class="text-lg font-semibold" id="navbar-title">La Gran Batalla</h1>
+    </div>
     <!-- Derecha: opciones (sin score) -->
     <div class="flex items-center gap-6 relative">
       <div class="relative">
+        <button
+          id="sound-toggle"
+          class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+          title="Activar / desactivar sonido"
+        >
+          🔊
+        </button>
         <button
           id="options-button"
           class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"

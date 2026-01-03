@@ -1,6 +1,9 @@
 let currentAudio = null;
 
 function playMusic(type) {
+  const soundEnabled = localStorage.getItem("soundEnabled") !== "false";
+  if (!soundEnabled) return;
+
   const tracks = {
     challenge: "../assets/audio/challenge.mp3",
     chapter: "../assets/audio/chapter.mp3",
@@ -10,10 +13,7 @@ function playMusic(type) {
   const src = tracks[type];
   if (!src) return;
 
-  // cortar audio previo si existía
-  if (currentAudio) {
-    fadeOutAndStop(currentAudio);
-  }
+  stopMusic();
 
   const audio = new Audio(src);
   audio.volume = 0;
@@ -21,12 +21,18 @@ function playMusic(type) {
 
   fadeIn(audio, 0.6, 800);
 
-  // auto fade-out
-  setTimeout(() => {
-    fadeOutAndStop(audio);
-  }, 5000);
+  // setTimeout(() => {
+  //   fadeOutAndStop(audio);
+  // }, 5000);
 
   currentAudio = audio;
+}
+
+function stopMusic() {
+  if (currentAudio) {
+    fadeOutAndStop(currentAudio);
+    currentAudio = null;
+  }
 }
 
 function fadeIn(audio, targetVolume, duration) {
@@ -37,7 +43,7 @@ function fadeIn(audio, targetVolume, duration) {
   }, 50);
 }
 
-function fadeOutAndStop(audio, duration = 1000) {
+function fadeOutAndStop(audio, duration = 800) {
   const step = audio.volume / (duration / 50);
   const interval = setInterval(() => {
     audio.volume = Math.max(audio.volume - step, 0);
