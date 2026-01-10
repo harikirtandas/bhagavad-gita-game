@@ -3,7 +3,8 @@ import { CHAPTERS } from "./challenges-data.js";
 
 // Score global
 const score = getGlobalScore();
-document.querySelector("#global-score").textContent = `${score}%`;
+const scoreElement = document.querySelector("#global-score");
+if (scoreElement) scoreElement.textContent = `${score}%`;
 
 // 1. Leer path desde la URL
 const params = new URLSearchParams(window.location.search);

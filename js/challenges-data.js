@@ -3,7 +3,7 @@ export const CHALLENGES = {
     id: "karma",
     title: "⚔️ El Campo de Batalla",
     yoga: "Karma Yoga",
-    chapters: [1, 6],
+    chapters: [1, 2, 3, 4, 5, 6],
     subtitle: "Karma Yoga · Capítulos 1–6",
     background: "../assets/images/3.png",
     narrative: [
@@ -20,7 +20,7 @@ export const CHALLENGES = {
     id: "bhakti",
     title: "❤️ El Corazón del Guerrero",
     yoga: "Bhakti Yoga",
-    chapters: [7, 12],
+    chapters: [7, 8, 9, 10, 11, 12],
     subtitle: "Bhakti Yoga · Capítulos 7–12",
     background: "../assets/images/1.png",
     narrative: [
@@ -37,7 +37,7 @@ export const CHALLENGES = {
     id: "jnana",
     title: "👁️ La Visión Clara",
     yoga: "Jñāna Yoga",
-    chapters: [13, 18],
+    chapters: [13, 14, 15, 16, 17, 18],
     subtitle: "Jñāna Yoga · Capítulos 13–18",
     background: "../assets/images/otras/6.png",
     narrative: [

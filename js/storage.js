@@ -32,6 +32,18 @@ function calculateProgress(chapterId) {
   return Math.round((correct / total) * 100);
 }
 
+export function calculateChapterScore(chapterId) {
+  const progress = getProgress();
+  const answers = progress[chapterId];
+
+  if (!answers) return 0;
+
+  const total = Object.keys(answers).length;
+  const correct = Object.values(answers).filter((v) => v).length;
+
+  return Math.round((correct / total) * 100);
+}
+
 export function getGlobalScore() {
   const progress = getProgress();
 
