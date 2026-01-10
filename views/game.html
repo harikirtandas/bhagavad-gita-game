@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Juego | Bhagavad-gītā</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -65,12 +66,12 @@
     </div>
   </nav>
 
-  <body class="bg-gray-100 min-h-screen p-6">
+  <body class="bg-gray-100 min-h-screen p-6 relative">
     <!-- Fondo semi-transparente -->
     <div
       class="absolute inset-0"
       style="
-        background-image: url('../assets/images/otras/2 2.png');
+        background-image: url('../assets/images/otras/2.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -81,14 +82,6 @@
     ></div>
     <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow space-y-6">
       <div class="max-w-xl mx-auto bg-white p-6 rounded shadow">
-        <!-- volver -->
-        <button
-          id="back-to-chapters"
-          class="mb-4 text-sm text-blue-600 hover:underline"
-        >
-          ← Volver
-        </button>
-
         <!-- Capítulo -->
         <h1 id="chapter-title" class="text-2xl font-semibold mb-2">
           Cargando capítulo...
@@ -119,6 +112,32 @@
         <div id="feedback" class="mt-4 font-semibold text-center"></div>
       </div>
     </div>
+
+    <!-- Footer con PayPal y Créditos -->
+    <footer class="bg-gray-800 text-white py-3 mt-8">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="mb-2">
+          <h3 class="text-sm font-semibold mb-1">Bhagavad-gītā · El Juego</h3>
+          <p class="text-gray-300 text-xs">
+            Una herramienta educativa para el estudio de las escrituras védicas
+          </p>
+        </div>
+
+        <div class="flex justify-center items-center gap-4 mb-2">
+          <a
+            href="https://www.paypal.com/donate"
+            target="_blank"
+            class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-xs font-medium transition"
+          >
+            🙏 Apoyar con PayPal
+          </a>
+        </div>
+
+        <div class="text-xs text-gray-400">
+          <p>© 2026 Bhagavad-gītā Educational Game</p>
+        </div>
+      </div>
+    </footer>
     <script src="../js/audio.js"></script>
     <script type="module" src="../js/game.js"></script>
     <script type="module" src="../js/navbar.js"></script>
