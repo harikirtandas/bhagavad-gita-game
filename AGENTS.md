@@ -11,9 +11,10 @@ This is a client-side web application - a Bhagavad-gītā educational quiz game 
 **No build system configured** - this is a static web application.
 
 ### Running the Application
+
 ```bash
 # Serve the application locally
-python -m http.server 8000
+Python3 -m http.server 8000
 # OR
 npx serve .
 # OR
@@ -21,9 +22,11 @@ live-server
 ```
 
 ### Testing
+
 No testing framework is currently configured. When adding tests, set up a framework like Vitest or Jest.
 
 ### Linting/Formatting
+
 No linting or formatting tools are configured. Consider adding ESLint and Prettier for consistency.
 
 ## Code Style Guidelines
@@ -31,12 +34,14 @@ No linting or formatting tools are configured. Consider adding ESLint and Pretti
 ### JavaScript Conventions
 
 #### Naming
+
 - **Files:** kebab-case (e.g., `challenges-data.js`, `game-state.js`)
 - **Functions:** camelCase (e.g., `renderChapter`, `updateProgress`, `handleAnswer`)
 - **Variables:** camelCase, descriptive names (e.g., `currentChapter`, `selectedAnswer`)
 - **Constants:** UPPER_SNAKE_CASE (e.g., `STORAGE_KEY`, `TOTAL_QUESTIONS`, `AUDIO_FADE_DURATION`)
 
 #### Import/Export Patterns
+
 ```javascript
 // Named imports preferred
 import { getProgress, saveAnswer } from "./storage.js";
@@ -44,29 +49,35 @@ import { getGlobalScore } from "./storage.js";
 
 // Named exports
 export { renderChapter, updateProgress };
-export function handleAnswer() { /* ... */ }
+export function handleAnswer() {
+  /* ... */
+}
 ```
+
 - Use relative paths with `./` prefix
 - Always include `.js` extensions in imports
 - Prefer named imports/exports over default
 
 #### Code Structure
+
 - Use ES6+ features (arrow functions, destructuring, template literals)
 - Modular architecture with clear separation of concerns
 - Each file should have a single responsibility
 - Use optional chaining (`?.`) for safe DOM element access
 
 #### Error Handling
+
 ```javascript
 try {
-  const response = await fetch('./data/chapters.json');
-  if (!response.ok) throw new Error('Failed to load data');
+  const response = await fetch("./data/chapters.json");
+  if (!response.ok) throw new Error("Failed to load data");
   const data = await response.json();
 } catch (error) {
-  console.error('Error loading chapters:', error);
+  console.error("Error loading chapters:", error);
   // Fallback behavior or user notification
 }
 ```
+
 - Use try/catch for async operations
 - Log errors with context
 - Provide graceful fallbacks
@@ -75,24 +86,27 @@ try {
 ### DOM Manipulation Guidelines
 
 #### Element Selection
+
 ```javascript
 // Preferred: querySelector with optional chaining
-const element = document.querySelector('#chapter-title')?.textContent;
+const element = document.querySelector("#chapter-title")?.textContent;
 
 // For multiple elements
-const buttons = document.querySelectorAll('.answer-button');
+const buttons = document.querySelectorAll(".answer-button");
 ```
 
 #### Event Handling
+
 ```javascript
 // Use arrow functions for event handlers
-element.addEventListener('click', (event) => {
+element.addEventListener("click", (event) => {
   event.preventDefault();
   handleAnswer(event.target.dataset.answer);
 });
 ```
 
 #### HTML Generation
+
 ```javascript
 // Use template literals for dynamic HTML
 const html = `
@@ -107,12 +121,14 @@ element.innerHTML = html;
 ### CSS and Styling
 
 #### Tailwind CSS Usage
+
 - Use utility classes for styling
 - Follow mobile-first responsive design
 - Use semantic color classes (e.g., `text-blue-600`, `bg-green-500`)
 - Maintain consistency with existing design patterns
 
 #### Custom CSS
+
 - Keep custom CSS minimal
 - Use CSS variables for theme colors
 - Follow BEM methodology for class names when needed
@@ -120,8 +136,9 @@ element.innerHTML = html;
 ### Data Management
 
 #### localStorage Patterns
+
 ```javascript
-const STORAGE_KEY = 'bhagavad-gita-progress';
+const STORAGE_KEY = "bhagavad-gita-progress";
 
 // Save data
 localStorage.setItem(STORAGE_KEY, JSON.stringify(progressData));
@@ -132,6 +149,7 @@ const progress = savedData ? JSON.parse(savedData) : defaultProgress;
 ```
 
 #### JSON Data Structure
+
 - Store chapter content and questions in `/data/` directory
 - Use consistent naming for data properties
 - Include metadata like chapter numbers, titles, descriptions
@@ -157,6 +175,7 @@ const progress = savedData ? JSON.parse(savedData) : defaultProgress;
 ## Development Guidelines
 
 ### Adding New Features
+
 1. Create separate module files for new functionality
 2. Follow existing naming conventions and patterns
 3. Update localStorage schema if needed (maintain backward compatibility)
@@ -164,18 +183,21 @@ const progress = savedData ? JSON.parse(savedData) : defaultProgress;
 5. Test responsive design on mobile devices
 
 ### Modifying Existing Code
+
 1. Read existing files to understand current patterns
 2. Maintain consistency with established conventions
 3. Update related modules if changing interfaces
 4. Test localStorage interactions thoroughly
 
 ### Audio System
+
 - Background music organized by yogic path
 - Use fade in/out effects for smooth transitions
 - Handle user preferences for audio playback
 - Provide mute/unmute controls
 
 ### Performance Considerations
+
 - Lazy load JSON data when needed
 - Optimize DOM updates (batch changes when possible)
 - Use event delegation for dynamic content
@@ -184,12 +206,14 @@ const progress = savedData ? JSON.parse(savedData) : defaultProgress;
 ## Language and Content
 
 ### Comments and Documentation
+
 - Use Spanish comments to match existing codebase
 - Include clear section headers with emoji indicators
 - Document complex logic and data structures
 - Update README.md for significant feature changes
 
 ### Content Guidelines
+
 - Maintain respectful tone for religious/spiritual content
 - Ensure accuracy of Sanskrit terms and translations
 - Follow established chapter organization and numbering
@@ -198,16 +222,19 @@ const progress = savedData ? JSON.parse(savedData) : defaultProgress;
 ## Testing Strategy (When Added)
 
 ### Unit Tests
+
 - Test utility functions and data transformations
 - Mock localStorage and fetch operations
 - Test error handling and edge cases
 
 ### Integration Tests
+
 - Test user workflows and navigation
 - Verify localStorage persistence
 - Test audio system functionality
 
 ### End-to-End Tests
+
 - Test complete user journeys
 - Verify responsive design across devices
 - Test accessibility features
