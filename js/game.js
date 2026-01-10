@@ -1,7 +1,7 @@
 // LÓGICA de JUEGO
 // Storage - En la vista se aclara type="module"
 import { getProgress, saveAnswer } from "./storage.js";
-import { getGlobalScore } from "./storage.js";
+import { getGlobalScore, calculateChapterScore } from "./storage.js";
 
 function getStartingQuestionIndex(chapterId) {
   const progress = getProgress();
@@ -63,8 +63,7 @@ function renderChapter(chapter) {
   document.getElementById("chapter-summary").textContent = chapter.summary; // inserta la descripción
 
   if (currentQuestionIndex >= chapter.challenges.length) {
-    document.getElementById("game-container").innerHTML =
-      "<p class='text-center font-semibold'>Capítulo completado 🙏</p>";
+    renderChapterCompleted(chapter);
     updateProgress();
     return;
   }
@@ -195,8 +194,7 @@ function nextQuestion() {
   if (currentQuestionIndex < currentChapter.challenges.length) {
     renderQuestion(currentChapter.challenges[currentQuestionIndex]);
   } else {
-    document.getElementById("game-container").innerHTML =
-      "<p class='text-center font-semibold'>Capítulo completado 🙏</p>";
+    renderChapterCompleted(currentChapter);
   }
 }
 
@@ -225,3 +223,69 @@ updateGlobalScore();
 document.addEventListener("DOMContentLoaded", () => {
   playMusic("game");
 });
+
+function renderChapterCompleted(chapter) {
+  const chapterScore = calculateChapterScore(chapter.id);
+  const container = document.getElementById("game-container");
+  
+  container.innerHTML = `
+    <div class="bg-white p-6 rounded shadow text-center">
+      <div class="mb-6">
+        <div class="text-6xl mb-4">🙏</div>
+        <h2 class="text-2xl font-bold text-green-600 mb-2">¡Capítulo Completado!</h2>
+        <p class="text-gray-600">Capítulo ${chapter.id}: ${chapter.title}</p>
+      </div>
+      
+      <div class="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg mb-6">
+        <h3 class="text-lg font-semibold mb-2">Tu Puntaje</h3>
+        <div class="text-3xl font-bold text-blue-600">${chapterScore}%</div>
+        <p class="text-sm text-gray-500 mt-1">
+          ${chapterScore >= 80 ? '¡Excelente!' : chapterScore >= 60 ? '¡Buen trabajo!' : 'Sigue practicando'}
+        </p>
+      </div>
+      
+      <div class="space-y-3">
+        <button 
+          id="repeat-chapter-btn"
+          class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition font-medium"
+        >
+          🔄 Repetir Capítulo
+        </button>
+        
+        <button 
+          id="back-to-challenges-btn"
+          class="w-full bg-gray-600 text-white py-3 px-4 rounded-lg hover:bg-gray-700 transition font-medium"
+        >
+          📚 Volver a Desafíos
+        </button>
+      </div>
+    </div>
+  `;
+  
+  // Event listeners para los nuevos botones
+  document.getElementById("repeat-chapter-btn")?.addEventListener("click", () => {
+    repeatChapter(chapter.id);
+  });
+  
+  document.getElementById("back-to-challenges-btn")?.addEventListener("click", () => {
+    const params = new URLSearchParams(window.location.search);
+    const path = params.get("path");
+    if (path) {
+      window.location.href = `chapters.html?path=${path}`;
+    } else {
+      window.location.href = "challenges.html";
+    }
+  });
+}
+
+function repeatChapter(chapterId) {
+  // Reiniciar el progreso del capítulo actual
+  const progress = getProgress();
+  if (progress[chapterId]) {
+    delete progress[chapterId];
+    localStorage.setItem("bg-progress", JSON.stringify(progress));
+  }
+  
+  // Recargar la página para empezar de nuevo
+  window.location.reload();
+}
