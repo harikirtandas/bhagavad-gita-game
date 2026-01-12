@@ -6,84 +6,95 @@
     <title>Capítulos | Bhagavad-gītā Game</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100 min-h-screen p-6 relative">
-    <!-- Fondo semi-transparente -->
-    <div
-      class="absolute inset-0"
-      style="
-        background-image: url('../assets/images/otras/1 2.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        image-rendering: pixelated;
-        opacity: 0.9;
-        z-index: -1;
-      "
-    ></div>
-    <!-- navbar -->
-    <nav
-      class="bg-slate-700 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
-    >
-      <div class="flex items-center">
-        <button
-          id="back-button"
-          class="mr-4 text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-          title="Volver"
-        >
-          ←
-        </button>
-        <!-- Izquierda: título -->
-        <h1 class="text-lg font-semibold" id="chapters-title">
-          Capítulos de la Bhagavad-gītā
-        </h1>
-      </div>
-
-      <!-- Derecha: score + opciones -->
-      <div class="flex items-center gap-6 relative">
-        <!-- Score -->
-        <div class="text-sm">Score: <span id="global-score">0%</span></div>
-
-        <!-- Dropdown -->
-        <div class="relative">
+  <body class="min-h-screen flex flex-col relative">
+    <main class="flex-grow">
+      <!-- Fondo semi-transparente -->
+      <div
+        class="absolute inset-0"
+        style="
+          background-image: url('../assets/images/otras/1 2.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          image-rendering: pixelated;
+          opacity: 0.9;
+          z-index: -1;
+        "
+      ></div>
+      <!-- navbar -->
+      <nav
+        class="bg-slate-700 rounded text-white mb-6 px-6 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center">
           <button
-            id="sound-toggle"
-            class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-            title="Activar / desactivar sonido"
+            id="back-button"
+            class="mr-4 text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+            title="Volver"
           >
-            🔊
+            ←
           </button>
-          <button
-            id="options-button"
-            class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-          >
-            Opciones ▾
-          </button>
+          <!-- Izquierda: título -->
+          <h1 class="text-lg font-semibold" id="chapters-title">
+            Capítulos de la Bhagavad-gītā
+          </h1>
+        </div>
 
-          <div
-            id="options-menu"
-            class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
-          >
-            <a
-              href="challenges.html"
-              class="block px-4 py-2 hover:bg-slate-100"
+        <!-- Derecha: score + opciones -->
+        <div class="flex items-center gap-6 relative">
+          <!-- Score -->
+          <div class="text-sm">Score: <span id="global-score">0%</span></div>
+
+          <!-- Dropdown -->
+          <div class="relative">
+            <button
+              id="sound-toggle"
+              class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+              title="Activar / desactivar sonido"
             >
-              Desafíos
-            </a>
+              🔊
+            </button>
+            <button
+              id="options-button"
+              class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+            >
+              Opciones ▾
+            </button>
 
-            <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
-              Inicio
-            </a>
+            <div
+              id="options-menu"
+              class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
+            >
+              <a
+                href="../index.html"
+                class="block px-4 py-2 hover:bg-slate-100"
+              >
+                Inicio
+              </a>
+              <a
+                href="challenges.html"
+                class="block px-4 py-2 hover:bg-slate-100"
+              >
+                Desafíos
+              </a>
+
+              <a
+                href="contacto.html"
+                class="block px-4 py-2 hover:bg-slate-100"
+              >
+                Contacto
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!-- CONTENEDOR DE CONTENIDO -->
-    <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow">
-      <ul id="chapters-list" class="space-y-4">
-        <!-- capítulos -->
-      </ul>
-    </div>
+      <!-- CONTENEDOR DE CONTENIDO -->
+      <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow">
+        <ul id="chapters-list" class="space-y-4">
+          <!-- capítulos -->
+        </ul>
+      </div>
+    </main>
 
     <!-- Footer con PayPal y Créditos -->
     <footer class="bg-slate-700 rounded text-white py-3 mt-8">
@@ -97,7 +108,7 @@
 
         <div class="flex justify-center items-center gap-4 mb-2">
           <a
-            href="https://www.paypal.com/donate"
+            href="https://www.paypal.me/BhagavadGitaJuego"
             target="_blank"
             class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-xs font-medium transition"
           >

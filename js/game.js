@@ -206,7 +206,7 @@ function updateProgress() {
   document.getElementById("progress-bar").style.width = `${percent}%`;
   document.getElementById(
     "progress-text"
-  ).textContent = `Progress: ${percent}%`;
+  ).textContent = `Progreso: ${percent}%`;
 }
 
 // Score
@@ -227,55 +227,65 @@ document.addEventListener("DOMContentLoaded", () => {
 function renderChapterCompleted(chapter) {
   const chapterScore = calculateChapterScore(chapter.id);
   const container = document.getElementById("game-container");
-  
+
   container.innerHTML = `
     <div class="bg-white p-6 rounded shadow text-center">
       <div class="mb-6">
-        <div class="text-6xl mb-4">🙏</div>
-        <h2 class="text-2xl font-bold text-green-600 mb-2">¡Capítulo Completado!</h2>
+        <div class="text-5xl mb-4">🙏</div>
+        <h2 class="text-2xl font-semibold text-green-600 mb-2">¡Capítulo Completado!</h2>
         <p class="text-gray-600">Capítulo ${chapter.id}: ${chapter.title}</p>
       </div>
       
-      <div class="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded-lg mb-6">
+      <div class="bg-gradient-to-r from-blue-50 to-green-50 p-4 rounded mb-6">
         <h3 class="text-lg font-semibold mb-2">Tu Puntaje</h3>
-        <div class="text-3xl font-bold text-blue-600">${chapterScore}%</div>
+        <div class="text-2xl text-blue-500">${chapterScore}%</div>
         <p class="text-sm text-gray-500 mt-1">
-          ${chapterScore >= 80 ? '¡Excelente!' : chapterScore >= 60 ? '¡Buen trabajo!' : 'Sigue practicando'}
+          ${
+            chapterScore >= 80
+              ? "¡Excelente!"
+              : chapterScore >= 60
+              ? "¡Buen trabajo!"
+              : "Sigue practicando"
+          }
         </p>
       </div>
       
-      <div class="space-y-3">
+      <div class="flex flex-col sm:flex-row gap-3">
         <button 
           id="repeat-chapter-btn"
-          class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition font-medium"
+          class="flex-1 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition font-medium"
         >
           🔄 Repetir Capítulo
         </button>
         
         <button 
           id="back-to-challenges-btn"
-          class="w-full bg-gray-600 text-white py-3 px-4 rounded-lg hover:bg-gray-700 transition font-medium"
+          class="flex-1 bg-gray-600 text-white py-2 px-4 rounded hover:bg-gray-700 transition font-medium"
         >
-          📚 Volver a Desafíos
+          📚 Volver a los Capítulos
         </button>
       </div>
     </div>
   `;
-  
+
   // Event listeners para los nuevos botones
-  document.getElementById("repeat-chapter-btn")?.addEventListener("click", () => {
-    repeatChapter(chapter.id);
-  });
-  
-  document.getElementById("back-to-challenges-btn")?.addEventListener("click", () => {
-    const params = new URLSearchParams(window.location.search);
-    const path = params.get("path");
-    if (path) {
-      window.location.href = `chapters.html?path=${path}`;
-    } else {
-      window.location.href = "challenges.html";
-    }
-  });
+  document
+    .getElementById("repeat-chapter-btn")
+    ?.addEventListener("click", () => {
+      repeatChapter(chapter.id);
+    });
+
+  document
+    .getElementById("back-to-challenges-btn")
+    ?.addEventListener("click", () => {
+      const params = new URLSearchParams(window.location.search);
+      const path = params.get("path");
+      if (path) {
+        window.location.href = `chapters.html?path=${path}`;
+      } else {
+        window.location.href = "challenges.html";
+      }
+    });
 }
 
 function repeatChapter(chapterId) {
@@ -285,7 +295,7 @@ function repeatChapter(chapterId) {
     delete progress[chapterId];
     localStorage.setItem("bg-progress", JSON.stringify(progress));
   }
-  
+
   // Recargar la página para empezar de nuevo
   window.location.reload();
 }

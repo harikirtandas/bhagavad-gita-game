@@ -6,95 +6,108 @@
     <title>La Gran Batalla · Challenge</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <nav
-    class="bg-slate-700 rounded text-white mb-4 px-6 py-4 flex justify-between items-center"
-  >
-    <div class="flex items-center">
-      <button
-        id="back-button"
-        class="mr-4 text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-        title="Volver"
+  <body class="min-h-screen flex flex-col relative">
+    <main class="flex-grow">
+      <nav
+        class="bg-slate-700 rounded text-white mb-4 px-6 py-4 flex justify-between items-center"
       >
-        ←
-      </button>
-      <!-- Izquierda: título -->
-      <h1 class="text-lg font-semibold" id="navbar-title">La Gran Batalla</h1>
-    </div>
-    <!-- Derecha: opciones (sin score) -->
-    <div class="flex items-center gap-6 relative">
-      <div class="relative">
-        <button
-          id="sound-toggle"
-          class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-          title="Activar / desactivar sonido"
-        >
-          🔊
-        </button>
-        <button
-          id="options-button"
-          class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
-        >
-          Opciones ▾
-        </button>
-
-        <div
-          id="options-menu"
-          class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
-        >
-          <a href="../index.html" class="block px-4 py-2 hover:bg-slate-100">
-            Inicio
-          </a>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <body class="bg-gray-100 min-h-screen p-6 relative">
-    <!-- Fondo semi-transparente -->
-    <div
-      id="background"
-      class="absolute inset-0"
-      style="
-        background-image: url('../assets/images/otras/1 2.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        image-rendering: pixelated;
-        opacity: 0.9;
-        z-index: -1;
-      "
-    ></div>
-    <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow space-y-6">
-      <div
-        class="max-w-xl mx-auto bg-white/30 p-8 rounded shadow space-y-6 relative z-10 hover:bg-white/90 transition-colors duration-300"
-      >
-        <h1
-          id="challenge-title"
-          class="text-3xl font-semibold text-center"
-        ></h1>
-
-        <p id="challenge-subtitle" class="text-center text-gray-500"></p>
-
-        <div
-          id="challenge-text"
-          class="text-gray-700 leading-relaxed space-y-4"
-        ></div>
-
-        <p
-          id="challenge-condition"
-          class="hidden text-center italic font-medium"
-        ></p>
-
-        <div class="text-center pt-4">
+        <div class="flex items-center">
           <button
-            id="enter-challenge"
-            class="bg-slate-700 text-white px-6 py-3 rounded hover:bg-slate-600 transition"
+            id="back-button"
+            class="mr-4 text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+            title="Volver"
           >
-            Entrar al desafío
+            ←
           </button>
+          <!-- Izquierda: título -->
+          <h1 class="text-lg font-semibold" id="navbar-title">
+            La Gran Batalla
+          </h1>
+        </div>
+        <!-- Derecha: opciones (sin score) -->
+        <div class="flex items-center gap-6 relative">
+          <div class="relative">
+            <button
+              id="sound-toggle"
+              class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+              title="Activar / desactivar sonido"
+            >
+              🔊
+            </button>
+            <button
+              id="options-button"
+              class="text-sm bg-slate-600 hover:bg-slate-500 px-3 py-3 rounded transition"
+            >
+              Opciones ▾
+            </button>
+
+            <div
+              id="options-menu"
+              class="absolute right-0 mt-2 w-40 bg-white text-slate-700 rounded shadow hidden"
+            >
+              <a
+                href="../index.html"
+                class="block px-4 py-2 hover:bg-slate-100"
+              >
+                Inicio
+              </a>
+
+              <a
+                href="contacto.html"
+                class="block px-4 py-2 hover:bg-slate-100"
+              >
+                Contacto
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Fondo semi-transparente -->
+      <div
+        id="background"
+        class="absolute inset-0"
+        style="
+          background-image: url('../assets/images/otras/1 2.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          image-rendering: pixelated;
+          opacity: 0.9;
+          z-index: -1;
+        "
+      ></div>
+      <div class="max-w-xl mx-auto bg-white/30 p-6 rounded-lg shadow space-y-6">
+        <div
+          class="max-w-xl mx-auto bg-white/30 p-8 rounded shadow space-y-6 relative z-10 hover:bg-white/90 transition-colors duration-300"
+        >
+          <h1
+            id="challenge-title"
+            class="text-3xl font-semibold text-center"
+          ></h1>
+
+          <p id="challenge-subtitle" class="text-center text-gray-500"></p>
+
+          <div
+            id="challenge-text"
+            class="text-gray-700 leading-relaxed space-y-4"
+          ></div>
+
+          <p
+            id="challenge-condition"
+            class="hidden text-center italic font-medium"
+          ></p>
+
+          <div class="text-center pt-4">
+            <button
+              id="enter-challenge"
+              class="bg-slate-700 text-white px-6 py-3 rounded hover:bg-slate-600 transition"
+            >
+              Entrar al desafío
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- Footer con PayPal y Créditos -->
     <footer class="bg-slate-700 rounded text-white py-3 mt-8">
@@ -108,7 +121,7 @@
 
         <div class="flex justify-center items-center gap-4 mb-2">
           <a
-            href="https://www.paypal.com/donate"
+            href="https://www.paypal.me/BhagavadGitaJuego"
             target="_blank"
             class="bg-blue-600 hover:bg-blue-700 px-3 py-1 rounded text-xs font-medium transition"
           >
